@@ -1,0 +1,212 @@
+#main-container {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 12rem;
+}
+
+.main-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.right-col {
+  background-image: url("../../images/streetiq/main-right.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2rem;
+  padding-right: 5rem;
+}
+
+.left-col {
+  background-image: url("../../images/streetiq/main-left.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 2rem;
+  padding-left: 5rem;
+}
+.right-col-button {
+  background-color: #7356c0;
+  font-family: Montserrat;
+  width: 186px;
+  height: 40px;
+  border-radius: 8px;
+  border-color: transparent !important;
+  outline: none !important;
+}
+
+.right-col-button:hover {
+  background-color: white;
+  color: #7356c0 !important;
+  border-color: #7356c0 !important;
+}
+.blur-col {
+  position: absolute;
+  width: 35rem;
+  height: 20rem;
+  top: 10%;
+  background: #ffffff;
+  filter: blur(50px);
+  border-radius: 50%;
+}
+.center-col {
+  position: absolute;
+  width: 35rem;
+  height: 25rem;
+  top: 25%;
+  z-index: 100;
+}
+
+.center-col h1 {
+  color: #3f2b89;
+  font-family: Montserrat;
+
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+
+  text-align: center;
+  letter-spacing: 0.0025em;
+}
+.center-col p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  text-align: center;
+  letter-spacing: 0.0015em;
+
+  /* Basic colors/Neutral 600 */
+
+  color: #8f9bb3;
+}
+.popular-customers-row {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100vw;
+}
+
+.popular-customers-row h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  /* Basic colors/Neutral 700 */
+
+  color: #2e3a59;
+}
+@media (min-width: 1700px) {
+  .popular-customers-row h1 {
+    font-size: clamp(24px, 3vw, 42px);
+  }
+}
+
+.customers-row {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 11rem;
+  margin-top: 2rem;
+}
+
+.benefits-trait {
+  position: absolute;
+}
+
+.benefits-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  padding-top: 1rem;
+}
+
+.benefits-text h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height, or 118% */
+
+  letter-spacing: 0.0025em;
+  white-space: nowrap;
+  /* Brand Color/Purple/Purple 500 */
+
+  color: #7356c0;
+}
+
+.benefits-text p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: 0.0015em;
+
+  /* Basic colors/Neutral 600 */
+
+  color: #8f9bb3;
+}
+
+.benefits-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+  margin-left: 6.6rem;
+  margin-top: 2rem;
+}
+.benefits-list .col img{
+    margin-bottom: 1rem;
+}
+.benefits-list .col h1 {
+  margin: 0.7rem 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+
+  letter-spacing: 0.0015em;
+
+  /* Basic colors/Neutral 700 */
+
+  color: #2e3a59;
+}
+
+.benefits-list .col p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: 0.0015em;
+
+  /* Basic colors/Neutral 600 */
+
+  color: #8f9bb3;
+}
