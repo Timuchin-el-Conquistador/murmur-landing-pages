@@ -12,6 +12,9 @@ import Behavior from "../assets/images/streetiq/behavior.svg";
 import Activity from "../assets/images/streetiq/activity.svg";
 import Demographics from "../assets/images/streetiq/demographics.svg";
 import Interest from "../assets/images/streetiq/interest.svg";
+import Abtesting from '../assets/images/streetiq/abtesting.svg'
+import AbTestingReport from '../assets/images/streetiq/abtesting-report.svg'
+import ArrowUp from '../assets/images/streetiq/arrow-up.svg'
 
 import Slider from "../components/streetiq/slider";
 
@@ -39,7 +42,7 @@ class StreetIQ extends React.Component {
                   go. Reach local audiences and drive results more effectively.
                   Build awareness, acquire, convert, increase sales
                 </p>
-                <Button className="right-col-button create-campaign">Create Campaign</Button>
+                <Button className="right-col-button create-campaign">Create Campaign {<img src={ArrowUp}/>}</Button>
               </Col>
               <Col className="blur-col"></Col>
             </Row>
@@ -137,7 +140,19 @@ class StreetIQ extends React.Component {
               </Col>
             </Row>
             <Row className="slides">
+              <Col className="slide-ab-testing">
+                 <h4>Lorem ipsum</h4>
+                 <p>Our screns powered by computer vision and patented sensor technology to</p>
+                 <img src={Abtesting}/>
+              </Col>
+              <Col className="slider">
               <Slider />
+              </Col>
+              <Col className="slide-ab-testing">
+                 <h4>Lorem ipsum</h4>
+                 <p>Our screns powered by computer vision and patented sensor technology to</p>
+                 <img src={AbTestingReport}/>
+              </Col>
             </Row>
           </Container>
         </div>

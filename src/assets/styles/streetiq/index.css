@@ -53,6 +53,25 @@
 height: 48px;
 background: #7356C0;
 border-radius: 4px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+
+/* Basic colors/Neutral 100 */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 8px;
 }
 .blur-col {
   position: absolute;
@@ -223,9 +242,50 @@ border-radius: 4px;
 
 
 .ab-testing.container .slides{
-  margin-left: 3rem;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
+.ab-testing.container .slides .slider{
+ margin-left: 8rem;
+}
+
+.ab-testing.container .slides .slide-ab-testing h4{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  
+  letter-spacing: 0.0015em;
+  
+  /* Brand Color/Purple/Purple 500 */
+  
+  color: #7356C0;
+  
+  
+}
+.ab-testing.container .slides .slide-ab-testing p{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  width: 290px;
+  letter-spacing: 0.0015em;
+  
+  /* Basic colors/Neutral 600 */
+  
+  color: #8F9BB3;
+  
+  width: 290px;
+}
+.ab-testing.container .slides .slide-ab-testing img{
+  position: absolute;
+  left:-2rem;
+}
 .ab-testing.container  .street-iq .col{
   display: flex;
   flex-direction: column;
