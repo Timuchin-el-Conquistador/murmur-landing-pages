@@ -1,0 +1,50 @@
+
+.carusel_buttons{
+    position: static;
+    margin:0;
+    margin-right:auto;
+    margin-top:10px;
+    display:flex;
+    justify-content: flex-start !important;
+}
+
+.carusel_buttons button{
+       width:50px;
+       height:5px;
+       background:blue;
+       border: transparent;
+       border-radius: 10px;
+    
+} 
+
+
+.header{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+letter-spacing: 0.0015em;
+
+/* Brand Color/Purple/Purple 500 */
+
+color: #7356C0;
+
+}
+
+.paragraph{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+width: 290px;
+letter-spacing: 0.0015em;
+
+/* Basic colors/Neutral 600 */
+
+color: #8F9BB3;
+}

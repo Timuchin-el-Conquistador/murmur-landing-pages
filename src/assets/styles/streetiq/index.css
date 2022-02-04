@@ -1,9 +1,9 @@
 #main-container {
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
-  margin-bottom: 12rem;
+
+  margin-bottom: 5rem;
+  position: relative;
 }
 
 .main-row {
@@ -48,6 +48,12 @@
   color: #7356c0 !important;
   border-color: #7356c0 !important;
 }
+.create-campaign{
+  width: 222px;
+height: 48px;
+background: #7356C0;
+border-radius: 4px;
+}
 .blur-col {
   position: absolute;
   width: 35rem;
@@ -63,6 +69,9 @@
   height: 25rem;
   top: 25%;
   z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .center-col h1 {
@@ -92,10 +101,11 @@
   color: #8f9bb3;
 }
 .popular-customers-row {
+   width: 100vw;
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  width: 100vw;
+
 }
 
 .popular-customers-row h1 {
@@ -210,3 +220,59 @@
 
   color: #8f9bb3;
 }
+
+
+.ab-testing.container .slides{
+  margin-left: 3rem;
+}
+
+.ab-testing.container  .street-iq .col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ab-testing.container .street-iq{
+  width:100vw;
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+}
+
+.ab-testing.container  .street-iq .col h1{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height, or 118% */
+  
+  text-align: center;
+  letter-spacing: 0.0025em;
+  
+  /* Brand Color/Purple/Purple 500 */
+  
+  color: #7356C0;
+  
+}
+
+.ab-testing.container  .street-iq .col p{
+/* Subtitle/S1-M */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+text-align: center;
+letter-spacing: 0.0015em;
+
+/* Basic colors/Neutral 600 */
+
+color: #8F9BB3;
+width: 592px;
+
+
+}
+
