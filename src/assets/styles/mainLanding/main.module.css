@@ -1246,6 +1246,7 @@
 @media screen and (max-width:767px){
     .leading_tt{
         font-size:20px;
+        padding-top:20px;
     }
     .leading_items{
         margin-top:32px;
@@ -1259,20 +1260,36 @@
     .leading_item img{
         max-width: 140px;
     }
+    .street_leading{
+        padding-bottom:0;
+    }
 }
 @media screen and (max-width:576px){
     .street_leading_section{
         padding-top:0;
-        padding-bottom:20px;
+        padding-bottom:0;
     }
     .leading_item img{
         max-width: 120px;
     }
     .main_diagram{
         padding-top:0;
+        padding-bottom:40px;
     }
     .street_leading{
         padding-bottom:0;
+    }
+    .main_top_info .tailored_h4{
+        margin-bottom:8px;
+    }   
+    .diagram_col .tailored_h4{
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom:12px;
+        padding-right:16px;
+    }
+    .diagram_col .tailored_p{
+        margin-bottom:20px;
     }
 }
 /* header main lading styles */
@@ -1366,5 +1383,61 @@
     .main_top_info .tailored_p,.main_top_info .tailored_left{
         margin-bottom:20px;
     }
-
+    .main_header{
+        padding:20px 0;
+    }
+}
+/* mobile menu style */
+.mobile_menu{
+    margin-left:12px;
+}
+.mobile_menu{
+    padding: 0;
+    height: 48px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #7356C0;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+    top: -1px;
+}
+.mobile_menu img{
+    width:32px;
+}
+@media screen and (min-width:992px){
+    .mobile_menu{
+        display:none;
+    }
+}
+@media screen and (max-width:420px){
+    .logo img{
+        width:104px;
+    }
+    .header_contact{
+        min-width: auto;
+        font-size:14px;
+        height: 36px;
+        line-height:36px;
+        padding-left:8px;
+        padding-right:8px;
+    }
+    .mobile_menu{
+        padding-left:4px;
+        padding-right:4px;
+        height:36px;
+        top:-2px;
+    }
+}
+@media screen and (max-width:340px){
+    .header_contact span{
+        display:none;
+    }
+    .header_contact{
+        padding-left:0;
+        padding-right:0;
+    }
+    .header_contact svg{
+        margin-right: 10px;
+    }
 }
