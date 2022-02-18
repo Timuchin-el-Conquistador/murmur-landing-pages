@@ -40,12 +40,15 @@ import GpsTech from  "../assets/images/mainlanding/gps-tech.svg";
 import techbg1 from  "../assets/images/mainlanding/tech-bg1.png";
 import techbg2 from  "../assets/images/mainlanding/tech-bg2.png";
 import MainTop from  "../assets/images/mainlanding/main-top.png";
+import Headerbg1 from  "../assets/images/mainlanding/header-bg1.png";
+import Headerbg2 from  "../assets/images/mainlanding/header-bg2.png";
 import Louis from "../assets/images/streetiq/Louis_Vuitton.svg";
 import Sony from "../assets/images/streetiq/Sony.svg";
 import Facebook from "../assets/images/streetiq/facebook.svg";
 import Slack from "../assets/images/streetiq/slack.svg";
 import MurmurLogo from "../assets/images/streetiq/murmur-logo.svg";
 import MobileMenu from "../assets/images/mobil-menu.svg";
+
 // css
 import "../assets/styles/mainLanding/index.css";
 import styles from '../assets/styles/mainLanding/main.module.css'
@@ -58,9 +61,6 @@ import Diagram_Slider from "../components/mainLanding/Diagram-Slider";
 
 
 class MainLanding extends React.Component {
-    MobileMenuClick = () => {
-        console.log('jasjd');
-    }
   render() {
     return (
       <React.Fragment>
@@ -87,7 +87,7 @@ class MainLanding extends React.Component {
                             <path d="M12.0008 12.87C11.1608 12.87 10.3108 12.61 9.66076 12.08L6.53075 9.58C6.21075 9.32 6.15076 8.85 6.41076 8.53C6.67076 8.21 7.14076 8.15 7.46076 8.41L10.5908 10.91C11.3508 11.52 12.6407 11.52 13.4007 10.91L16.5308 8.41C16.8508 8.15 17.3308 8.2 17.5808 8.53C17.8408 8.85 17.7908 9.33 17.4608 9.58L14.3308 12.08C13.6908 12.61 12.8408 12.87 12.0008 12.87Z" fill="#7356C0"/>
                         </svg>
                     </a>
-                    <button type="button" className={styles.mobile_menu} onClick={this.MobileMenuClick}>
+                    <button type="button" className={styles.mobile_menu}>
                         <img src={MobileMenu} alt="" />
                     </button>
                 </div>
@@ -109,6 +109,8 @@ class MainLanding extends React.Component {
                     </div>
                 </div>
             </Container>
+            <img src={Headerbg1} alt="" className={styles.header_bg1}/>
+            <img src={Headerbg2} alt="" className={styles.header_bg2}/>
           </section>
           <section className={styles.street_leading_section}>
             <div className={styles.leading_tt}>We work with some of the world’s <strong>leading</strong> companies</div>

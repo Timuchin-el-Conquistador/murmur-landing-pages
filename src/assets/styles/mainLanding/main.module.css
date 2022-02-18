@@ -1350,6 +1350,7 @@
 .main_top_section{
     padding-top:72px;
     min-height:500px;
+    position:relative;
 }
 .main_top_img{
     float:right;
@@ -1357,6 +1358,18 @@
 }
 .main_top_info .tailored_left{
     padding-top:0;
+}
+.header_bg1,.header_bg2{
+    position:absolute;
+    left:0;
+    pointer-events:none;
+    z-index:-1;
+}
+.header_bg1{
+    top:-20px;
+}
+.header_bg2{
+    top:60px;
 }
 @media screen and (max-width:992px){
     .main_header_center{

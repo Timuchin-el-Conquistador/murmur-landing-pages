@@ -6,6 +6,9 @@ import React from 'react';
 
 import StreetIQ from './pages/street-iq';
 import MainLanding from "./pages/main-landing";
+import LandingPage from "./pages/landing-page";
+import SurveyRewards from "./pages/survey-rewards";
+import Destination from "./pages/destination";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <Routes>
           <Route path="/" element={<MainLanding/>} />
           <Route path="/streetLanding" element={<StreetIQ/>} />
+          <Route path="/landingPage" element={<LandingPage />} />
+          <Route path="/surveyRewards" element={<SurveyRewards />} />
+          <Route path="/destination" element={<Destination />} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>
