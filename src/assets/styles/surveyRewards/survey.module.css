@@ -7,20 +7,6 @@
 .main_header{
     padding:32px 0;
 }
-.main_header_center a{
-    color:#2E3A59;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    margin-left:20px;
-    margin-right:20px;
-    display: inline-block;
-    margin-top: 4px;
-    transition:all .4s ease;
-}
-.main_header_center a:hover{
-    color:#7356C0;
-}
 .header_contact{
     min-width:154px;
     border: 1px solid #7356C0;
@@ -78,9 +64,6 @@
     top:60px;
 }
 @media screen and (max-width:992px){
-    .main_header_center{
-        display:none;
-    }
     .main_top_section{
         padding-top: 0;
         min-height: auto;
@@ -608,5 +591,11 @@
     }
     .works_rows .works_row:nth-child(even) .phone_section,.phone_section,.phone_info{
         text-align:center;
+    }
+}
+@media screen and (max-width:992px){
+    .mobile_menu{
+        position:relative;
+        z-index:999;
     }
 }

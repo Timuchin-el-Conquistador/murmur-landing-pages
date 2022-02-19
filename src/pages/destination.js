@@ -450,10 +450,12 @@ class Destination extends React.Component {
         <footer className={styles.street_footer}>
             <Container>
                 <Row className={styles.street_footer_top}>
-                    <Col xs="12" md="3" className="footer_item">
-                        <a href="https://www.murmurcars.com/">
-                            <img src={FooterLogo} alt="" />
-                            <img src={SurveyLogo} alt="" className={styles.logo_survey}/>
+                    <Col xs="12" md="4" className="footer_item">
+                        <a href="#" className={styles.logo}>
+                            <span className={styles.logo_flex}>
+                                <img src={MurmurLogo} alt=""/>
+                                <img src={RepublicLogo} alt="" />
+                            </span>
                         </a>
                         <p className={styles.ft_left_p}>Helping founders to promote their growd funding campaigns</p>
                         <ul className={styles.footer_social}>
@@ -523,7 +525,7 @@ class Destination extends React.Component {
                         <li><a href="https://www.murmurcars.com/">We’re hiring!</a></li>
                         </ul>
                     </Col>
-                    <Col xs="12" md="3" className="footer_item">
+                    <Col xs="12" md="2" className="footer_item">
                         <p className={styles.footer_tt}>Reach us</p>
                         <ul className={styles.footer_contact}>
                         <li>

@@ -47,6 +47,18 @@ import Startup_Slider from "../components/landingPage/Startup-Slider";
 
 
 class LandingPage extends React.Component {
+  constructor(props) {    
+    super(props)
+    this.state = {
+      active: false
+    }
+    this.handleClick = this.handleClick.bind(this)
+  }
+  handleClick() {
+      this.setState({
+        active: !this.state.active
+      })
+  }
   render() {
     return (
       <React.Fragment>
@@ -57,13 +69,11 @@ class LandingPage extends React.Component {
                         <img src={MurmurLogo} alt=""/>
                     </a>
                 </div>
-                <div className={styles.main_header_center}>
-                    <div className={styles.active}>
-                        <a href="#">Adversiters</a>
-                        <a href="#">Drivers</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Login</a>
-                    </div>
+                <div className= { this.state.active ? "main_header_center activeMenu" : "main_header_center"}>
+                    <span><a href="#">Adversiters</a></span>
+                    <span><a href="#">Drivers</a></span>
+                    <span><a href="#">Blog</a></span>
+                    <span><a href="#">Login</a></span>
                 </div>
                 <div className={styles.main_header_right}>
                     <a href="#" className={styles.header_contact}>
@@ -73,12 +83,12 @@ class LandingPage extends React.Component {
                             <path d="M12.0008 12.87C11.1608 12.87 10.3108 12.61 9.66076 12.08L6.53075 9.58C6.21075 9.32 6.15076 8.85 6.41076 8.53C6.67076 8.21 7.14076 8.15 7.46076 8.41L10.5908 10.91C11.3508 11.52 12.6407 11.52 13.4007 10.91L16.5308 8.41C16.8508 8.15 17.3308 8.2 17.5808 8.53C17.8408 8.85 17.7908 9.33 17.4608 9.58L14.3308 12.08C13.6908 12.61 12.8408 12.87 12.0008 12.87Z" fill="#7356C0"/>
                         </svg>
                     </a>
-                    <button type="button" className={styles.mobile_menu}>
+                    <button type="button" onClick={this.handleClick} className={styles.mobile_menu}>
                         <img src={MobileMenu} alt="" />
                     </button>
                 </div>
             </Container>
-        </header>
+          </header>
         <section className={styles.grow_sales}>
             <div className={styles.grow_content}>
                 <h2>Takeover Streets, Grow Sales </h2>
