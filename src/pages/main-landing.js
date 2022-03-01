@@ -59,6 +59,7 @@ import Ads_Double_Slide2 from "../components/mainLanding/Ads-Double-Slide2";
 import System_Works_Slider from "../components/mainLanding/System-Works-Slider";
 import Diagram_Slider from "../components/mainLanding/Diagram-Slider";
 
+import {Link} from 'react-router-dom'
 
 class MainLanding extends React.Component {
     constructor(props) {    
@@ -485,12 +486,12 @@ class MainLanding extends React.Component {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget tincidunt turpis tincidunt eros, integer vitae. Velit viverra accumsan a ut at sed est. Go to the Street IQ for more detailed information:
             </div>
             <div className="text-center">
-              <a href="https://www.murmurcars.com/" className={styles.view_demo_btn}>Try Free 
+              <Link to="/streetLanding" className={styles.view_demo_btn}>Try Free 
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M15.0084 12.1449L15.0084 4.99133L7.85486 4.99133" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M4.99103 15.0087L14.9082 5.09151" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-              </a>
+              </Link>
             </div>
           </Container>
         </section>
