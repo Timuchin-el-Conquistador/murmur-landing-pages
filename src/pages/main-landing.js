@@ -61,6 +61,7 @@ import Diagram_Slider from "../components/mainLanding/Diagram-Slider";
 
 import { Link } from "react-router-dom";
 
+let async = null;
 class MainLanding extends React.Component {
   constructor(props) {
     super(props);
@@ -85,6 +86,7 @@ class MainLanding extends React.Component {
     for (let slide in slider) {
       console.log(slide);
       if (slider[slide]) {
+        
         this.setState({
           ...this.state,
           slider: {
@@ -104,36 +106,40 @@ class MainLanding extends React.Component {
         if (!prevState.slider[slide]) {
           console.log("false");
           if (slide === "top") {
-            setTimeout(
-                () =>
-                  this.setState({
-                    ...this.state,
-                    slider: {...this.state, top:false, middle:true}
-                  }),
-                3000
-              );
+            async = setTimeout(
+              () =>
+                this.setState({
+                  ...this.state,
+                  slider: { ...this.state, top: false, middle: true },
+                }),
+              3000
+            );
           } else if (slide === "middle") {
-            setTimeout(
-                () =>
-                  this.setState({
-                    ...this.state,
-                    slider: {...this.state, bottom:true, middle:false}
-                  }),
-                3000
-              );
+            async = setTimeout(
+              () =>
+                this.setState({
+                  ...this.state,
+                  slider: { ...this.state, bottom: true, middle: false },
+                }),
+              3000
+            );
           } else {
-            setTimeout(
-                () =>
-                  this.setState({
-                    ...this.state,
-                    slider: {...this.state, top:true, bottom:false}
-                  }),
-                3000
-              );
+            async = setTimeout(
+              () =>
+                this.setState({
+                  ...this.state,
+                  slider: { ...this.state, top: true, bottom: false },
+                }),
+              3000
+            );
           }
-    
         }
       }
+    }
+  }
+  componentWillUnmount() {
+    if (async) {
+      clearTimeout(async);
     }
   }
   render() {
