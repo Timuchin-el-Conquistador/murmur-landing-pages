@@ -45,12 +45,18 @@ import Faq from "../components/landingPage/Faq";
 import Case_Product_Slider from "../components/landingPage/Case-Product-Slider";
 import Startup_Slider from "../components/landingPage/Startup-Slider";
 
+let async = null
 
 class LandingPage extends React.Component {
   constructor(props) {    
     super(props)
     this.state = {
-      active: false
+      active: false,
+      slider: {
+        top: true,
+        middle: false,
+        bottom: false,
+      }
     }
     this.handleClick = this.handleClick.bind(this)
   }
@@ -59,7 +65,69 @@ class LandingPage extends React.Component {
         active: !this.state.active
       })
   }
+  switchToCLickedVerticalSlide = (active) => {
+    const slider = this.state.slider;
+    for (let slide in slider) {
+      console.log(slide);
+      if (slider[slide]) {
+        
+        this.setState({
+          ...this.state,
+          slider: {
+            ...this.state.slider,
+            [slide]: false,
+            [active]: true,
+          },
+        });
+      }
+    }
+  };
+  componentDidUpdate(prevProps, prevState) {
+    const slider = this.state.slider;
+    for (let slide in slider) {
+      if (slider[slide]) {
+        console.log(prevState);
+        if (!prevState.slider[slide]) {
+          console.log("false");
+          if (slide === "top") {
+            async = setTimeout(
+              () =>
+                this.setState({
+                  ...this.state,
+                  slider: { ...this.state, top: false, middle: true },
+                }),
+              3000
+            );
+          } else if (slide === "middle") {
+            async = setTimeout(
+              () =>
+                this.setState({
+                  ...this.state,
+                  slider: { ...this.state, bottom: true, middle: false },
+                }),
+              3000
+            );
+          } else {
+            async = setTimeout(
+              () =>
+                this.setState({
+                  ...this.state,
+                  slider: { ...this.state, top: true, bottom: false },
+                }),
+              3000
+            );
+          }
+        }
+      }
+    }
+  }
+  componentWillUnmount() {
+    if (async) {
+      clearTimeout(async);
+    }
+  }
   render() {
+    const { top, middle, bottom } = this.state.slider;
     return (
       <React.Fragment>
         <header className={styles.main_header}>
@@ -204,56 +272,71 @@ class LandingPage extends React.Component {
             <Container className={styles.testimonial_slider}>
                 <Row className={styles.testimonial_row}>
                     <Col md="5" xs="12" className={styles.testimonial_col}>
-                        <div className={styles.testimonial_inner}>
-                            <div className="testimonial_dots">
-                                <ul>
-                                    <li className="active">
-                                        <button className="testimonial_dot"></button>
-                                    </li>
-                                    <li>
-                                        <button className="testimonial_dot"></button>
-                                    </li>
-                                    <li>
-                                        <button className="testimonial_dot"></button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <ul className={styles.testimonial_left}>
-                                <li className={styles.active_li}>
-                                    <div className={styles.testimonial_left_item}>
-                                        <div className={styles.profil_left_img}>
-                                            <img src={Person1} alt="" />
-                                        </div>
-                                        <div className={styles.profil_left_txt}>
-                                            <p>Joe Doe</p>
-                                            <span>Ceo at Lorem İpsum</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className={styles.testimonial_left_item}>
-                                        <div className={styles.profil_left_img}>
-                                            <img src={Person2} alt="" />
-                                        </div>
-                                        <div className={styles.profil_left_txt}>
-                                            <p>Joe Doe</p>
-                                            <span>Ceo at Lorem İpsum</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className={styles.testimonial_left_item}>
-                                        <div className={styles.profil_left_img}>
-                                            <img src={Person3} alt="" />
-                                        </div>
-                                        <div className={styles.profil_left_txt}>
-                                            <p>Joe Doe</p>
-                                            <span>Ceo at Lorem İpsum</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                    <div className={styles.testimonial_inner}>
+                  <div className="testimonial_dots">
+                    <ul>
+                      <li className={`${top && "active"}`}>
+                        <button
+                          onClick={() =>
+                            this.switchToCLickedVerticalSlide("top")
+                          }
+                          className="testimonial_dot"
+                        ></button>
+                      </li>
+                      <li className={`${middle && "active"}`}>
+                        <button
+                          onClick={() =>
+                            this.switchToCLickedVerticalSlide("middle")
+                          }
+                          className="testimonial_dot"
+                        ></button>
+                      </li>
+                      <li className={`${bottom && "active"}`}>
+                        <button
+                          onClick={() =>
+                            this.switchToCLickedVerticalSlide("bottom")
+                          }
+                          className="testimonial_dot"
+                        ></button>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul className={styles.testimonial_left}>
+                    <li className={`${top && styles.active_li}`}>
+                      <div className={styles.testimonial_left_item}>
+                        <div className={styles.profil_left_img}>
+                          <img src={Person1} alt="" />
                         </div>
+                        <div className={styles.profil_left_txt}>
+                          <p>Joe Doe</p>
+                          <span>Ceo at Lorem İpsum</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li className={`${middle && styles.active_li}`}>
+                      <div className={styles.testimonial_left_item}>
+                        <div className={styles.profil_left_img}>
+                          <img src={Person2} alt="" />
+                        </div>
+                        <div className={styles.profil_left_txt}>
+                          <p>Joe Doe</p>
+                          <span>Ceo at Lorem İpsum</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li className={`${bottom && styles.active_li}`}>
+                      <div className={styles.testimonial_left_item}>
+                        <div className={styles.profil_left_img}>
+                          <img src={Person3} alt="" />
+                        </div>
+                        <div className={styles.profil_left_txt}>
+                          <p>Joe Doe</p>
+                          <span>Ceo at Lorem İpsum</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
                     </Col>
                     <Col md="7" xs="12" className={styles.testimonial_col}>
                         <div className={styles.testimonial_item}>
@@ -343,7 +426,7 @@ class LandingPage extends React.Component {
                   <Faq.Header> <span className="faq_plus_icon">+</span> What is murmur?</Faq.Header>
                   <Faq.Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum gravida amet vitae proin odio. Aliquet vulputate non interdum ut tempus tortor. Egestas netus nisi pellentesque in. Cras tempus amet orci, tortor phasellus imperdiet purus. Turpis sed at vitae libero orci amet libero. Ornare sed habitant sit aliquet. Ut viverra vitae ultrices sit phasellus turpis tristique eget. Aliquet non proin dis.</Faq.Body>
                 </Faq.Item>
-                <Faq.Item open>
+                <Faq.Item>
                   <Faq.Header><span className="faq_plus_icon">+</span> What is murmur?</Faq.Header>
                   <Faq.Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum gravida amet vitae proin odio. Aliquet vulputate non interdum ut tempus tortor. Egestas netus nisi pellentesque in. Cras tempus amet orci, tortor phasellus imperdiet purus. Turpis sed at vitae libero orci amet libero. Ornare sed habitant sit aliquet. Ut viverra vitae ultrices sit phasellus turpis tristique eget. Aliquet non proin dis.</Faq.Body>
                 </Faq.Item>
