@@ -1,0 +1,26 @@
+#custom-dots.slick-slider-platform .slick-dots li{
+    margin-left: 4px !important;
+    width:  50px !important;
+ }
+ #custom-dots.slick-slider-platform .slick-dots li:not(.slick-active){
+   max-width:7px !important;
+   border-radius: 50%!important;
+ }
+ 
+ #custom-dots.slick-slider-platform .slick-dots li:not(.slick-active) button{
+   border-radius: 50%!important;
+   max-width:7px !important;
+   background-color: rgb(179, 174, 174) !important;
+ }
+
+ #custom-dots.slick-slider-platform .slick-dots li.slick-active button, .slick-slider-platform .slick-dots li.slick-active{
+    width: 50px!important
+}
+
+ .slick-slider-platform .slick-dots li{
+     width: 100px !important;
+ }
+
+ .slick-slider-platform .slick-dots li.slick-active button, .slick-slider-platform .slick-dots li.slick-active{
+     width: 100px!important
+ }

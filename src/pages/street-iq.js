@@ -355,7 +355,7 @@ class StreetIQ extends React.Component {
                   <Faq.Header> <span className="faq_plus_icon">+</span> What is murmur?</Faq.Header>
                   <Faq.Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum gravida amet vitae proin odio. Aliquet vulputate non interdum ut tempus tortor. Egestas netus nisi pellentesque in. Cras tempus amet orci, tortor phasellus imperdiet purus. Turpis sed at vitae libero orci amet libero. Ornare sed habitant sit aliquet. Ut viverra vitae ultrices sit phasellus turpis tristique eget. Aliquet non proin dis.</Faq.Body>
                 </Faq.Item>
-                <Faq.Item open>
+                <Faq.Item>
                   <Faq.Header><span className="faq_plus_icon">+</span> What is murmur?</Faq.Header>
                   <Faq.Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum gravida amet vitae proin odio. Aliquet vulputate non interdum ut tempus tortor. Egestas netus nisi pellentesque in. Cras tempus amet orci, tortor phasellus imperdiet purus. Turpis sed at vitae libero orci amet libero. Ornare sed habitant sit aliquet. Ut viverra vitae ultrices sit phasellus turpis tristique eget. Aliquet non proin dis.</Faq.Body>
                 </Faq.Item>

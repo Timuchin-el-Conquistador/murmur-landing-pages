@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import styles from '../../assets/styles/streetiq/streetLandingSlider.module.css';
 import "../../assets/styles/streetiq/index.css";
+import './index.css'
+
 import mainstyles from '../../assets/styles/mainLanding/main.module.css';
 // imgs
 import slider1 from "../../assets/images/streetiq/slider1.jpg";
@@ -18,7 +20,7 @@ class Ads_Double_Slide1 extends Component {
       slidesToScroll: 1,
     };
     return (
-      <div className="slick-slider-platform adsdb-platform">
+      <div id='custom-dots' className="slick-slider-platform adsdb-platform">
         <section className={styles.street_slider_cover}>
           <Slider {...settings} className={mainstyles.adsdb_slider_cover}>
             <div className={mainstyles.street_slider_item}>

@@ -3,6 +3,7 @@ import { Row, Col } from "reactstrap";
 import Slider from "react-slick";
 import styles from '../../assets/styles/mainLanding/main.module.css'
 import "../../assets/styles/mainLanding/index.css";
+import './index.css'
 // imgs
 import slider1 from "../../assets/images/streetiq/slider1.jpg";
 import slider2 from "../../assets/images/streetiq/slider2.jpg";
@@ -21,7 +22,7 @@ class Diagram_Slider extends Component {
     //   margin:20
     };
     return (
-      <div className="slick-slider-platform">
+      <div id='custom-dots'  className="slick-slider-platform">
         <section className={styles.street_slider_cover}>
           <Slider {...settings}>
             <div className={styles.street_slider_item}>
