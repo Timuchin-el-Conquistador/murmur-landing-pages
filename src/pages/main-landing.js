@@ -49,6 +49,9 @@ import Slack from "../assets/images/streetiq/slack.svg";
 import MurmurLogo from "../assets/images/streetiq/murmur-logo.svg";
 import MobileMenu from "../assets/images/mobil-menu.svg";
 
+import Locations from '../assets/images/mainlanding/locations.svg'
+
+
 // css
 import "../assets/styles/mainLanding/index.css";
 import styles from "../assets/styles/mainLanding/main.module.css";
@@ -58,6 +61,8 @@ import Ads_Double_Slide1 from "../components/mainLanding/Ads-Double-Slide1";
 import Ads_Double_Slide2 from "../components/mainLanding/Ads-Double-Slide2";
 import System_Works_Slider from "../components/mainLanding/System-Works-Slider";
 import Diagram_Slider from "../components/mainLanding/Diagram-Slider";
+
+
 
 import { Link } from "react-router-dom";
 
@@ -208,6 +213,10 @@ class MainLanding extends React.Component {
           <Container className={styles.main_top_contain}>
             <div className={styles.main_top_info}>
               <img src={MainTop} alt="" className={styles.main_top_img} />
+            
+              <img src={Locations} alt='' className={styles.main_top_img_location}/>
+              <img src={Locations} alt='' className={styles.main_top_img_location}/>
+              <img src={Locations} alt='' className={styles.main_top_img_location}/>
               <div className={styles.tailored_left}>
                 <h4 className={styles.tailored_h4}>
                   Lorem ipsum dolor sit amet.

@@ -9,6 +9,8 @@ import slider1 from "../../assets/images/streetiq/slider1.jpg";
 import slider2 from "../../assets/images/streetiq/slider2.jpg";
 import slider3 from "../../assets/images/streetiq/slider3.png";
 
+import Analytics from '../../assets/images/mainlanding/analytics.png'
+
 class Diagram_Slider extends Component {
   render() {
     const settings = {
@@ -41,7 +43,7 @@ class Diagram_Slider extends Component {
                     </Col>
                     <Col md="7" xs="12">
                         <div className={styles.tailored_img}>
-                            <img src={ slider1 } alt="" />
+                            <img src={ Analytics } alt="" />
                         </div>
                     </Col>
                 </Row>
