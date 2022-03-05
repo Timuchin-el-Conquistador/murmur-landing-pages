@@ -9,7 +9,7 @@ import slider1 from "../../assets/images/streetiq/slider1.jpg";
 import slider2 from "../../assets/images/streetiq/slider2.jpg";
 import slider3 from "../../assets/images/streetiq/slider3.png";
 
-import Analytics from '../../assets/images/mainlanding/analytics.png'
+import Analytics from '../../assets/images/analytics.png'
 
 class Diagram_Slider extends Component {
   render() {
