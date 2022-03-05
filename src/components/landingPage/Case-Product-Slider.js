@@ -3,8 +3,9 @@ import Slider from "react-slick";
 import styles from '../../assets/styles/streetiq/streetLandingSlider.module.css';
 import "../../assets/styles/landingPage/index.css";
 // imgs
-import CreateAd from "../../assets/images/create-ad.png";
-import CreateAd_ from "../../assets/images/create-ad-.png";
+import slider1 from "../../assets/images/streetiq/slider1.jpg";
+import slider3 from "../../assets/images/streetiq/slider3.png";
+import PinkLightDIsplay from '../../assets/images/pink-light-display.png'
 
 class Case_Product_Slider extends Component {
   render() {
@@ -27,7 +28,7 @@ class Case_Product_Slider extends Component {
                 </div>
                 <div className={styles.slider_item_img}>
                     <a href="#">
-                        <img src={CreateAd} alt="" />
+                        <img src={slider1} alt="" />
                     </a>
                 </div>
             </div>
@@ -37,7 +38,7 @@ class Case_Product_Slider extends Component {
                 </div>
                 <div className={styles.slider_item_img}>
                     <a href="#">
-                    <img src={CreateAd_} alt="" />
+                    <img src={PinkLightDIsplay} alt="" />
                     </a>
                 </div>
             </div>
@@ -47,17 +48,7 @@ class Case_Product_Slider extends Component {
                 </div>
                 <div className={styles.slider_item_img}>
                     <a href="#">
-                        <img src={CreateAd} alt="" />
-                    </a>
-                </div>
-            </div>
-            <div className={styles.street_slider_item}>
-                <div className={styles.slider_item_txt}>
-                    <p>2. İndoor Adversiting</p>
-                </div>
-                <div className={styles.slider_item_img}>
-                    <a href="#">
-                    <img src={CreateAd_} alt="" />
+                        <img src={slider3} alt="" />
                     </a>
                 </div>
             </div>
@@ -67,7 +58,7 @@ class Case_Product_Slider extends Component {
                 </div>
                 <div className={styles.slider_item_img}>
                     <a href="#">
-                        <img src={CreateAd} alt="" />
+                        <img src={slider1} alt="" />
                     </a>
                 </div>
             </div>
@@ -77,7 +68,17 @@ class Case_Product_Slider extends Component {
                 </div>
                 <div className={styles.slider_item_img}>
                     <a href="#">
-                    <img src={CreateAd_} alt="" />
+                    <img src={PinkLightDIsplay} alt="" />
+                    </a>
+                </div>
+            </div>
+            <div className={styles.street_slider_item}>
+                <div className={styles.slider_item_txt}>
+                    <p>3. Street adversiting</p>
+                </div>
+                <div className={styles.slider_item_img}>
+                    <a href="#">
+                        <img src={slider3} alt="" />
                     </a>
                 </div>
             </div>
