@@ -7,7 +7,7 @@ import "../../assets/styles/streetiq/index.css";
 
 import ComputerVision from '../../assets/images/computer-vision.png'
 import ProccessUnderhood from '../../assets/images/proccess-underhood.png'
-import Analytics from '../../assets/images/mainlanding/analytics.png'
+import Analytics from '../../assets/images/analytics.png'
 
 class System_Works_Slider extends Component {
   render() {
