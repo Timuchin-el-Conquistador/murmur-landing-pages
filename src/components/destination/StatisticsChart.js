@@ -1,90 +1,69 @@
-import ReactApexChart from 'apexcharts';
+import Chart from "react-apexcharts";
 import React, { Component } from "react";
-// import './pies.css'
+import '../../assets/styles/destination/chart.css'
 
 class Statistics_Chart extends Component {
-  state = {
-    series: [
-      {
-        name: "reach",
-        data: [44, 55, 41, 67, 22, 43, 102],
-      },
-      
-    ],
-    options: {
-      colors: ["#3F2B89"],
-
-      chart: {
-        type: "bar",
-        stacked: true,
-        toolbar: {
-          show: true,
+  constructor(props) {
+    super(props);
+    this.state = {
+      options: {
+        chart: {
+          id: "apexchart-example",
         },
-        zoom: {
-          enabled: true,
+        colors: ["#3F2B89"],
+        stroke: {
+          curve: "smooth",
+          width: 2,
         },
-        foreColor: '#ffffff'
-      },
+        dataLabels: {
+          enabled: false,
+        },
    
-      responsive: [
-        {
-          breakpoint: 480,
-          options: {
-            legend: {
-              position: "bottom",
-              offsetX: -10,
-              offsetY: 0,
+        markers: {
+          size: 5,
+          hover: {
+            size: 9
+          }
+        },
+        xaxis: {
+          categories: ["June", '', "July",'', "August",'', "September"],
+          labels: {
+            style: {
+              colors: [
+                "#8F9BB3",
+                "#8F9BB3",
+                "#8F9BB3",
+                "#8F9BB3",
+                "#8F9BB3",
+                "#8F9BB3",
+                "#8F9BB3",
+              ],
+              fontSize: "12",
+              fontFamily: "'Montserrat', sans-serif",
+              fontWeight: 500,
+              cssClass: "apexcharts-xaxis-label",
             },
           },
         },
+
+      },
+      series: [
+        {
+          name: "Raised money",
+          data: [1500, 3000, 5000, 7000, 9000, 11000, 13000],
+        },
       ],
-      plotOptions: {
-        bar: {
-          borderRadius: 8,
-          horizontal: false,
-        },
-      },
-      xaxis: {
-        type: "datetime",
-        categories: [
-          "01/01/2011 GMT",
-          "01/02/2011 GMT",
-          "01/03/2011 GMT",
-          "01/04/2011 GMT",
-          "01/05/2011 GMT",
-          "01/06/2011 GMT",
-        ],
-        labels: {
-          show: true,
-          style: {
-            colors: ['#ffffff'],
-            fontSize: '12px',
-            fontFamily: 'Helvetica, Arial, sans-serif',
-            fontWeight: 400,
-            cssClass: 'apexcharts-yaxis-label',
-        },
-        }
-      },
-      legend: {
-        position: "right",
-        offsetY: 40,
-      },
-      fill: {
-        opacity: 1,
-     
-      },
-    },
-  };
+    };
+  }
   render() {
     return (
       <div id="chart">
-        <ReactApexChart
+        <Chart
           options={this.state.options}
           series={this.state.series}
-          type="bar"
-          width='100%'
-          height= {240}
-
+          type="area"
+          width="100%"
+          height={197}
         />
       </div>
     );

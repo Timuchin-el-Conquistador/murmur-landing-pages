@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import styles from '../../assets/styles/streetiq/streetLandingSlider.module.css';
 import "../../assets/styles/streetiq/index.css";
 // imgs
-import slider1 from "../../assets/images/streetiq/slider1.jpg";
-import slider2 from "../../assets/images/streetiq/slider2.jpg";
-import slider3 from "../../assets/images/streetiq/slider3.png";
+import LightsInNight from '../../assets/images/night-lights-car.png'
+import NuarHouse from '../../assets/images/nuar-house.png'
+import GreenAndCozy from '../../assets/images/green-and-cozy.png'
 
 class Brand_Slider extends Component {
   render() {
@@ -22,45 +22,45 @@ class Brand_Slider extends Component {
       <div className="slick-slider-platform">
         <section className={styles.street_slider_cover}>
           <Slider {...settings}>
-            <div className={styles.street_slider_item}>
+          <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
                 <a href="#">
-                  <img src={slider1} alt="" />
+                  <img src={GreenAndCozy} alt="" />
                 </a>
               </div>
             </div>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
                 <a href="#">
-                  <img src={slider3} alt="" />
+                  <img src={LightsInNight} alt="" />
                 </a>
               </div>
             </div>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
                 <a href="#">
-                  <img src={slider1} alt="" />
+                  <img src={NuarHouse} alt="" />
                 </a>
               </div>
             </div>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
                 <a href="#">
-                  <img src={slider2} alt="" />
+                  <img src={GreenAndCozy} alt="" />
                 </a>
               </div>
             </div>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
                 <a href="#">
-                  <img src={slider1} alt="" />
+                  <img src={LightsInNight} alt="" />
                 </a>
               </div>
             </div>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
                 <a href="#">
-                  <img src={slider3} alt="" />
+                  <img src={NuarHouse} alt="" />
                 </a>
               </div>
             </div>

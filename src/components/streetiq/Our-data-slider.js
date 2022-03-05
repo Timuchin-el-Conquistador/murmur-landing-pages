@@ -6,6 +6,7 @@ import "../../assets/styles/streetiq/index.css";
 import slider1 from "../../assets/images/streetiq/slider1.jpg";
 import slider2 from "../../assets/images/streetiq/slider2.jpg";
 import slider3 from "../../assets/images/streetiq/slider3.png";
+import SilverCar from '../../assets/images/silver-car.png'
 
 class Our_data_slider extends Component {
   render() {
@@ -24,17 +25,12 @@ class Our_data_slider extends Component {
           <Slider {...settings}>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
-                <img src={slider1} alt="" />
-              </div>
-            </div>
-            <div className={styles.street_slider_item}>
-              <div className={styles.slider_item_img}>
                 <img src={slider3} alt="" />
               </div>
             </div>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
-                <img src={slider1} alt="" />
+                <img src={SilverCar} alt="" />
               </div>
             </div>
             <div className={styles.street_slider_item}>
@@ -44,12 +40,17 @@ class Our_data_slider extends Component {
             </div>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
-                <img src={slider1} alt="" />
+                <img src={slider3} alt="" />
               </div>
             </div>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
-                <img src={slider3} alt="" />
+                <img src={SilverCar} alt="" />
+              </div>
+            </div>
+            <div className={styles.street_slider_item}>
+              <div className={styles.slider_item_img}>
+                <img src={slider2} alt="" />
               </div>
             </div>
           </Slider>

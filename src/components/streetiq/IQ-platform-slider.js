@@ -3,9 +3,10 @@ import Slider from "react-slick";
 import styles from '../../assets/styles/streetiq/streetLandingSlider.module.css';
 import "../../assets/styles/streetiq/index.css";
 // imgs
-import slider1 from "../../assets/images/streetiq/slider1.jpg";
-import slider2 from "../../assets/images/streetiq/slider2.jpg";
-import slider3 from "../../assets/images/streetiq/slider3.png";
+
+import AbTesting from '../../assets/images/ab-testing.png'
+import AbTestingCreate from '../../assets/images/ab-testing-create.png'
+import AbTestingReport from '../../assets/images/ab-testing-report.png'
 
 class IQ_platform_slider extends Component {
   render() {
@@ -28,7 +29,7 @@ class IQ_platform_slider extends Component {
                 <p>Our screns powered by computer vision and patented sensor technology to </p>
               </div>
               <div className={styles.slider_item_img}>
-                <img src={slider1} alt="" />
+                <img src={AbTesting} alt="" />
               </div>
             </div>
             <div className={styles.street_slider_item}>
@@ -37,7 +38,7 @@ class IQ_platform_slider extends Component {
                 <p>Our screns powered by computer vision and patented sensor technology to </p>
               </div>
               <div className={styles.slider_item_img}>
-                <img src={slider3} alt="" />
+                <img src={AbTestingCreate} alt="" />
               </div>
             </div>
             <div className={styles.street_slider_item}>
@@ -46,7 +47,7 @@ class IQ_platform_slider extends Component {
                 <p>Our screns powered by computer vision and patented sensor technology to </p>
               </div>
               <div className={styles.slider_item_img}>
-                <img src={slider1} alt="" />
+                <img src={AbTestingReport} alt="" />
               </div>
             </div>
             <div className={styles.street_slider_item}>
@@ -55,7 +56,7 @@ class IQ_platform_slider extends Component {
                 <p>Our screns powered by computer vision and patented sensor technology to </p>
               </div>
               <div className={styles.slider_item_img}>
-                <img src={slider2} alt="" />
+                <img src={AbTesting} alt="" />
               </div>
             </div>
             <div className={styles.street_slider_item}>
@@ -64,7 +65,7 @@ class IQ_platform_slider extends Component {
                 <p>Our screns powered by computer vision and patented sensor technology to </p>
               </div>
               <div className={styles.slider_item_img}>
-                <img src={slider1} alt="" />
+                <img src={AbTestingCreate} alt="" />
               </div>
             </div>
             <div className={styles.street_slider_item}>
@@ -73,7 +74,7 @@ class IQ_platform_slider extends Component {
                 <p>Our screns powered by computer vision and patented sensor technology to </p>
               </div>
               <div className={styles.slider_item_img}>
-                <img src={slider3} alt="" />
+                <img src={AbTestingReport} alt="" />
               </div>
             </div>
           </Slider>

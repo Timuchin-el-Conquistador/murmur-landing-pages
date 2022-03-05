@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import styles from '../../assets/styles/streetiq/streetLandingSlider.module.css';
 import "../../assets/styles/landingPage/index.css";
 // imgs
-import slider1 from "../../assets/images/streetiq/slider1.jpg";
-import slider3 from "../../assets/images/streetiq/slider3.png";
+import CreateAd from "../../assets/images/create-ad.png";
+import CreateAd_ from "../../assets/images/create-ad-.png";
 
 class Startup_Slider extends Component {
   render() {
@@ -21,13 +21,13 @@ class Startup_Slider extends Component {
       <div className="slick-slider-platform">
         <section className={styles.street_slider_cover}>
           <Slider {...settings}>
-            <div className={styles.street_slider_item}>
+          <div className={styles.street_slider_item}>
                 <div className={styles.slider_item_txt}>
                     <p>1. Outdoor adversiting</p>
                 </div>
                 <div className={styles.slider_item_img}>
                     <a href="#">
-                        <img src={slider1} alt="" />
+                        <img src={CreateAd} alt="" />
                     </a>
                 </div>
             </div>
@@ -37,7 +37,7 @@ class Startup_Slider extends Component {
                 </div>
                 <div className={styles.slider_item_img}>
                     <a href="#">
-                    <img src={slider3} alt="" />
+                    <img src={CreateAd_} alt="" />
                     </a>
                 </div>
             </div>
@@ -47,17 +47,7 @@ class Startup_Slider extends Component {
                 </div>
                 <div className={styles.slider_item_img}>
                     <a href="#">
-                    <img src={slider1} alt="" />
-                    </a>
-                </div>
-            </div>
-            <div className={styles.street_slider_item}>
-                <div className={styles.slider_item_txt}>
-                    <p>1. Outdoor adversiting</p>
-                </div>
-                <div className={styles.slider_item_img}>
-                    <a href="#">
-                        <img src={slider1} alt="" />
+                        <img src={CreateAd} alt="" />
                     </a>
                 </div>
             </div>
@@ -67,17 +57,27 @@ class Startup_Slider extends Component {
                 </div>
                 <div className={styles.slider_item_img}>
                     <a href="#">
-                    <img src={slider3} alt="" />
+                    <img src={CreateAd_} alt="" />
                     </a>
                 </div>
             </div>
             <div className={styles.street_slider_item}>
                 <div className={styles.slider_item_txt}>
-                    <p>3. Street adversiting</p>
+                    <p>1. Outdoor adversiting</p>
                 </div>
                 <div className={styles.slider_item_img}>
                     <a href="#">
-                    <img src={slider1} alt="" />
+                        <img src={CreateAd} alt="" />
+                    </a>
+                </div>
+            </div>
+            <div className={styles.street_slider_item}>
+                <div className={styles.slider_item_txt}>
+                    <p>2. İndoor Adversiting</p>
+                </div>
+                <div className={styles.slider_item_img}>
+                    <a href="#">
+                    <img src={CreateAd_} alt="" />
                     </a>
                 </div>
             </div>

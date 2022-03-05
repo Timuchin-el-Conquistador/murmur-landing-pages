@@ -37,6 +37,7 @@ import Louis from "../assets/images/streetiq/Louis_Vuitton.svg";
 import Sony from "../assets/images/streetiq/Sony.svg";
 import Facebook from "../assets/images/streetiq/facebook.svg";
 import Slack from "../assets/images/streetiq/slack.svg";
+
 // css
 import "../assets/styles/mainLanding/index.css";
 import styles from '../assets/styles/landingPage/landing.module.css'
@@ -44,6 +45,9 @@ import styles from '../assets/styles/landingPage/landing.module.css'
 import Faq from "../components/landingPage/Faq";
 import Case_Product_Slider from "../components/landingPage/Case-Product-Slider";
 import Startup_Slider from "../components/landingPage/Startup-Slider";
+
+
+import { Link } from "react-router-dom";
 
 let async = null
 
@@ -644,6 +648,13 @@ class LandingPage extends React.Component {
                 </div>
             </Container>
         </footer>
+        <div>
+        <Link to='/destination' style={{marginRight:'3rem'}}>Destination</Link>
+        <Link to='/streetLanding'  style={{marginRight:'3rem'}}>StreetLanding</Link>
+        <Link to='/SurveyRewards'  style={{marginRight:'3rem'}}>SurveyRewards</Link>
+        <Link to='/landingPage'  style={{marginRight:'3rem'}}>Landing</Link>
+        <Link to='/'  style={{marginRight:'3rem'}}>Main</Link>
+        </div>
       </React.Fragment>
     );
   }

@@ -30,6 +30,8 @@ import FooterLogo from  "../assets/images/streetiq/logo.svg";
 import Email from  "../assets/images/streetiq/email.svg";
 import Call from  "../assets/images/streetiq/call.svg";
 import Location from  "../assets/images/streetiq/location.svg";
+
+import Locations from '../assets/images/mainlanding/locations.svg'
 // css
 import "../assets/styles/streetiq/index.css";
 import styles from '../assets/styles/streetiq/index.module.css'
@@ -38,6 +40,8 @@ import Our_data_slider from "../components/streetiq/Our-data-slider";
 import Faq from "../components/streetiq/Faq";
 import Research_slider from "../components/streetiq/Research-slider";
 
+
+import { Link } from "react-router-dom";
 
 class StreetIQ extends React.Component {
   render() {
@@ -228,7 +232,8 @@ class StreetIQ extends React.Component {
           <Container className={styles.happy_container}>
             <h5 className={styles.happy_h5}>Whats happening in the street?</h5>
             <div className={styles.happy_map}>
-              <img src={MapImg} alt="" />
+            <img src={MapImg} alt="" />
+            <img src={Locations} alt='' className={styles.main_top_img_location}/>
               <div className={styles.happy_select}>
                 <select name="type_of_data" id="type_of_data">
                   <option value="1">Type of data</option>
@@ -239,7 +244,9 @@ class StreetIQ extends React.Component {
                   <path d="M10.0003 14C9.41693 14 8.83359 13.775 8.39193 13.3334L2.95859 7.90003C2.71693 7.65837 2.71693 7.25837 2.95859 7.0167C3.20026 6.77503 3.60026 6.77503 3.84193 7.0167L9.27526 12.45C9.67526 12.85 10.3253 12.85 10.7253 12.45L16.1586 7.0167C16.4003 6.77503 16.8003 6.77503 17.0419 7.0167C17.2836 7.25837 17.2836 7.65837 17.0419 7.90003L11.6086 13.3334C11.1669 13.775 10.5836 14 10.0003 14Z" fill="#2E3A59"/>
                 </svg>
               </div>
+       
             </div>
+          
             <div className={styles.happy_blocks}>
               <Row>
                 <Col md="3" xs="6" className={styles.happy_block}>
@@ -580,6 +587,13 @@ class StreetIQ extends React.Component {
               </div>
           </Container>
         </footer>
+        <div>
+        <Link to='/destination' style={{marginRight:'3rem'}}>Destination</Link>
+        <Link to='/streetLanding'  style={{marginRight:'3rem'}}>StreetLanding</Link>
+        <Link to='/SurveyRewards'  style={{marginRight:'3rem'}}>SurveyRewards</Link>
+        <Link to='/landingPage'  style={{marginRight:'3rem'}}>Landing</Link>
+        <Link to='/'  style={{marginRight:'3rem'}}>Main</Link>
+        </div>
       </React.Fragment>
     );
   }

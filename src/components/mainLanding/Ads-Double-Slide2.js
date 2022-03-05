@@ -7,7 +7,7 @@ import mainstyles from '../../assets/styles/mainLanding/main.module.css';
 // imgs
 import slider1 from "../../assets/images/streetiq/slider1.jpg";
 import slider3 from "../../assets/images/streetiq/slider3.png";
-
+import Analytics from '../../assets/images/analytics.png'
 class Ads_Double_Slide2 extends Component {
   render() {
     const settings = {
@@ -24,7 +24,7 @@ class Ads_Double_Slide2 extends Component {
           <Slider {...settings}>
             <div className={mainstyles.street_slider_item}>
               <div className={mainstyles.slider_item_img}>
-                <img src={slider1} alt="" />
+                <img src={Analytics} alt="" />
               </div>
             </div>
             <div className={mainstyles.street_slider_item}>

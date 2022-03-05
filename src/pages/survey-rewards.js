@@ -23,6 +23,10 @@ import Surveybg3 from "../assets/images/rewards/survey-bg3.png"
 import "../assets/styles/mainLanding/index.css";
 import styles from '../assets/styles/surveyRewards/survey.module.css'
 
+
+
+import { Link } from "react-router-dom";
+
 class SurveyRewards extends React.Component {
     constructor(props) {    
         super(props)
@@ -327,6 +331,13 @@ class SurveyRewards extends React.Component {
                 </div>
             </Container>
         </footer>
+        <div>
+        <Link to='/destination' style={{marginRight:'3rem'}}>Destination</Link>
+        <Link to='/streetLanding'  style={{marginRight:'3rem'}}>StreetLanding</Link>
+        <Link to='/SurveyRewards'  style={{marginRight:'3rem'}}>SurveyRewards</Link>
+        <Link to='/landingPage'  style={{marginRight:'3rem'}}>Landing</Link>
+        <Link to='/'  style={{marginRight:'3rem'}}>Main</Link>
+        </div>
       </React.Fragment>
     );
   }

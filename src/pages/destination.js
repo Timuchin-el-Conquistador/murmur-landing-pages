@@ -36,7 +36,11 @@ import "../assets/styles/destination/index.css";
 import styles from '../assets/styles/destination/destination.module.css'
 import Startup_Slider from "../components/destination/Startup-Slider";
 import Faq from "../components/destination/Faq";
-// import Statistics_Chart from "../components/destination/StatisticsChart";
+import Statistics_Chart from "../components/destination/StatisticsChart";
+
+
+
+import { Link } from "react-router-dom";
 
 let async = null
 
@@ -355,8 +359,8 @@ class Destination extends React.Component {
                       <span className={styles.stat_span}>Since last month</span>
                     </div>
                   </div>
-                  <img src={StaticChart} alt="" className={styles.static_chart_img}/>
-                  {/* <Statistics_Chart /> */}
+                 
+                  <Statistics_Chart/>
                 </div>
               </Col>
               <Col md="4" xs="12" className={styles.static_col}>
@@ -659,6 +663,13 @@ class Destination extends React.Component {
                 </div>
             </Container>
         </footer>
+        <div>
+        <Link to='/destination' style={{marginRight:'3rem'}}>Destination</Link>
+        <Link to='/streetLanding'  style={{marginRight:'3rem'}}>StreetLanding</Link>
+        <Link to='/SurveyRewards'  style={{marginRight:'3rem'}}>SurveyRewards</Link>
+        <Link to='/landingPage'  style={{marginRight:'3rem'}}>Landing</Link>
+        <Link to='/'  style={{marginRight:'3rem'}}>Main</Link>
+        </div>
       </React.Fragment>
     );
   }

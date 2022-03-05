@@ -6,6 +6,9 @@ import "../../assets/styles/streetiq/index.css";
 import slider1 from "../../assets/images/streetiq/slider1.jpg";
 import slider2 from "../../assets/images/streetiq/slider2.jpg";
 import slider3 from "../../assets/images/streetiq/slider3.png";
+import LightsInNight from '../../assets/images/night-lights-car.png'
+import NuarHouse from '../../assets/images/nuar-house.png'
+import GreenAndCozy from '../../assets/images/green-and-cozy.png'
 
 class Research_slider extends Component {
   render() {
@@ -24,32 +27,32 @@ class Research_slider extends Component {
           <Slider {...settings}>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
-                <img src={slider1} alt="" />
+                <img src={GreenAndCozy} alt="" />
               </div>
             </div>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
-                <img src={slider3} alt="" />
+                <img src={LightsInNight} alt="" />
               </div>
             </div>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
-                <img src={slider1} alt="" />
+                <img src={NuarHouse} alt="" />
               </div>
             </div>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
-                <img src={slider2} alt="" />
+                <img src={GreenAndCozy} alt="" />
               </div>
             </div>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
-                <img src={slider1} alt="" />
+                <img src={LightsInNight} alt="" />
               </div>
             </div>
             <div className={styles.street_slider_item}>
               <div className={styles.slider_item_img}>
-                <img src={slider3} alt="" />
+                <img src={NuarHouse} alt="" />
               </div>
             </div>
           </Slider>

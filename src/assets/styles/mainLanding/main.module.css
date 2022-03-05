@@ -1463,6 +1463,16 @@ right: 24rem;
 top: 20.5rem;
 }
 
+
+
+.single_img_location{
+    position:absolute;
+    animation: animate 2s infinite;
+    right:32rem;
+    top: 10rem;
+    width: 20px !important;
+    height: 20px !important
+}
 @keyframes animate {
     0% {
     transform: scale(1);

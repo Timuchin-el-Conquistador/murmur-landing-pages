@@ -16,7 +16,7 @@ import StrategyBg2 from "../assets/images/mainlanding/strategy-bg2.png";
 import Nationaly from "../assets/images/mainlanding/nationaly.png";
 import HappyBg from "../assets/images/streetiq/happy-bg.png";
 import MapImg from "../assets/images/streetiq/map.png";
-import AbTesting from "../assets/images/mainlanding/abtesting.png";
+
 import Vector1 from "../assets/images/mainlanding/vector1.png";
 import Vector2 from "../assets/images/mainlanding/vector2.png";
 import Vision_bg1 from "../assets/images/mainlanding/vision-bg1.png";
@@ -49,8 +49,11 @@ import Slack from "../assets/images/streetiq/slack.svg";
 import MurmurLogo from "../assets/images/streetiq/murmur-logo.svg";
 import MobileMenu from "../assets/images/mobil-menu.svg";
 
+import AbTesting from '../assets/images/ab-testing.png'
+import AbTestingCreate from '../assets/images/ab-testing-create.png'
+import AbTestingReport from '../assets/images/ab-testing-report.png'
 import Locations from '../assets/images/mainlanding/locations.svg'
-
+import Analytics from '../assets/images/analytics.png'
 
 // css
 import "../assets/styles/mainLanding/index.css";
@@ -643,7 +646,7 @@ class MainLanding extends React.Component {
                 </Col>
                 <Col md="7" xs="12">
                   <div className={styles.main_ab_img}>
-                    <img src={AbTesting} alt="" />
+                    <img src={AbTestingCreate} alt="" />
                   </div>
                 </Col>
               </Row>
@@ -661,7 +664,7 @@ class MainLanding extends React.Component {
                 </Col>
                 <Col md="7" xs="12">
                   <div className={styles.main_ab_img}>
-                    <img src={AbTesting} alt="" />
+                    <img src={AbTestingReport} alt="" />
                   </div>
                 </Col>
               </Row>
@@ -676,6 +679,7 @@ class MainLanding extends React.Component {
             <h5 className={styles.happy_h5}>Whats happening in the street?</h5>
             <div className={styles.happy_map}>
               <img src={MapImg} alt="" />
+              <img src={Locations} alt='' className={styles.single_img_location}/>
             </div>
             <div className={styles.happy_blocks}>
               <Row>
@@ -891,7 +895,7 @@ class MainLanding extends React.Component {
               </Col>
               <Col md="7" xs="12">
                 <div className={styles.tailored_img}>
-                  <img src={TailoredImg} alt="" />
+                  <img src={Analytics} alt="" />
                 </div>
               </Col>
             </Row>
@@ -1249,6 +1253,13 @@ class MainLanding extends React.Component {
             </div>
           </Container>
         </footer>
+        <div>
+        <Link to='/destination' style={{marginRight:'3rem'}}>Destination</Link>
+        <Link to='/streetLanding'  style={{marginRight:'3rem'}}>StreetLanding</Link>
+        <Link to='/SurveyRewards'  style={{marginRight:'3rem'}}>SurveyRewards</Link>
+        <Link to='/landingPage'  style={{marginRight:'3rem'}}>Landing</Link>
+        <Link to='/'  style={{marginRight:'3rem'}}>Main</Link>
+        </div>
       </React.Fragment>
     );
   }
