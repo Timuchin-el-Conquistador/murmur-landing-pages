@@ -97,6 +97,16 @@ class Startup_Slider extends Component {
                     </a>
                 </div>
             </div>
+            <div className={styles.street_slider_item}>
+                <div className={styles.slider_item_txt}>
+                    <p>1. Outdoor adversiting</p>
+                </div>
+                <div className={styles.slider_item_img}>
+                    <a href="#">
+                        <img src={Objective} alt="" />
+                    </a>
+                </div>
+            </div>
           </Slider>
         </section>
       </div>
