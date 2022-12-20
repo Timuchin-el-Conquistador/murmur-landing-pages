@@ -164,6 +164,8 @@
 .street_footer_bottom{
     padding-top:18px;
     padding-bottom:18px;
+    display: flex;
+    align-items: center;
 }
 .copyright{
     margin-bottom:0;
@@ -308,6 +310,15 @@
         margin-right:0;
         margin-bottom:12px;
         display:block;
+    }
+    .street_footer_bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .street_footer_bottom > div{
+       flex:content;
+       width: min-content;
     }
 }
 /* create_champ_btn styles */
@@ -506,6 +517,13 @@
     border-radius:50%;
     overflow:hidden;
 }
+.profil_left_img a span img{
+    width: 44px ;
+    height: 44px ;
+    line-height: 95px;
+    font-size: 18px;
+     
+}
 .profil_left_txt{
     width:calc(100% - 44px);
     padding-left:24px;
@@ -587,11 +605,11 @@
     padding-bottom:100px;
 }
 .contact_cover{
-    min-height:288px;
+
     border-radius: 16px;
-    background-image:url('../../images/streetiq//contact-bg.png');
+    background-image:url('../../../images/landing-page/streetiq//contact-bg.png');
     background-repeat:no-repeat;
-    background-size:contain;
+    background-size:cover;
     background-position:right;
     position:relative;
     overflow:hidden;
@@ -744,6 +762,9 @@
 .dest_con_btn:hover{
     background-color: #7356C0;
     color:#fff;
+}
+.dest_con_btn:active{
+    color: #7356C0 !important
 }
 .dest_con_btn:hover svg path{
     stroke:#fff;
@@ -929,13 +950,13 @@
 }
 .static_col:first-child .stat_item{
     background:#fff;
-    background-image:url('../../images/destination/static_bg1.png');
+    background-image:url('../../../images/landing-page/destination/static_bg1.png');
 }
 .static_col:nth-child(2) .stat_item{
-    background-image:url('../../images/destination/static_bg2.png');
+    background-image:url('../../../images/landing-page/destination/static_bg2.png');
 }
 .static_col:nth-child(3) .stat_item{
-    background-image:url('../../images/destination/static_bg3.png');
+    background-image:url('../../../images/landing-page/destination/static_bg3.png');
 }
 .static_col:first-child .stat_item,.static_col:nth-child(2) .stat_item,
 .static_col:nth-child(3) .stat_item{
@@ -1033,4 +1054,9 @@
     .street_faq_section{
         padding-bottom: 16px
     }
+}
+
+
+.ft_left_p_max_width{
+    max-width: 250px;
 }

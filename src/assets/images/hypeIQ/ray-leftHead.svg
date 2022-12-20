@@ -1,0 +1,41 @@
+<svg width="397" height="12" viewBox="0 0 397 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_3736_9031" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="397" height="12">
+<rect x="397" y="12" width="397" height="12" rx="6.00001" transform="rotate(-180 397 12)" fill="white"/>
+</mask>
+<g mask="url(#mask0_3736_9031)">
+<g filter="url(#filter0_f_3736_9031)">
+<mask id="mask1_3736_9031" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="122" y="-87" width="568" height="198">
+<rect width="564.611" height="133.214" rx="8.22259" transform="matrix(-0.993125 0.117061 -0.0501917 -0.99874 689.527 45.4062)" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask1_3736_9031)">
+<path d="M-24.9286 153.669L842.076 17.4184" stroke="white" stroke-width="15"/>
+<path d="M-25.3485 145.289L841.656 9.03848" stroke="#FCC232" stroke-width="15"/>
+<path d="M-25.7645 136.911L841.24 0.660552" stroke="#FFDF6B" stroke-width="15"/>
+<path d="M-26.1864 128.531L840.818 -7.71933" stroke="#FFC46B" stroke-width="15"/>
+<path d="M-26.6102 120.153L840.394 -16.0982" stroke="#FF986B" stroke-width="15"/>
+<path d="M-27.0321 111.765L839.972 -24.4859" stroke="#FF746B" stroke-width="15"/>
+<path d="M-27.4541 103.393L839.551 -32.858" stroke="#FF6B74" stroke-width="15"/>
+<path d="M-27.8778 95.0119L839.127 -41.2389" stroke="#FF6BB2" stroke-width="15"/>
+<path d="M-28.2958 86.6291L838.709 -49.6217" stroke="#EC70FF" stroke-width="15"/>
+<path d="M-28.7118 78.2502L838.293 -58.0006" stroke="#E16BFF" stroke-width="15"/>
+<path d="M-29.1356 69.8674L837.869 -66.3834" stroke="#AC6BFF" stroke-width="15"/>
+<path d="M-29.5575 61.4904L837.447 -74.7603" stroke="#916BFF" stroke-width="15"/>
+<path d="M-29.9794 53.1115L837.025 -83.1393" stroke="#6E6BFF" stroke-width="15"/>
+<path d="M-30.4012 44.7277L836.603 -91.523" stroke="#2463D6" stroke-width="15"/>
+<path d="M-30.8212 36.3507L836.183 -99.9" stroke="#4B84EB" stroke-width="15"/>
+<path d="M-31.243 27.9728L835.762 -108.278" stroke="#6BB8FF" stroke-width="15"/>
+<path d="M-31.6649 19.591L835.34 -116.66" stroke="#6BCAFF" stroke-width="15"/>
+<path d="M-32.0887 11.217L834.916 -125.034" stroke="#6BF6FF" stroke-width="15"/>
+<path d="M-32.5106 2.82731L834.494 -133.423" stroke="#43BA7F" stroke-width="15"/>
+<path d="M-32.9325 -5.54671L834.072 -141.797" stroke="#FCC232" stroke-width="15"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_3736_9031" x="8.51367" y="-200.734" width="794.611" height="425.329" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="57" result="effect1_foregroundBlur_3736_9031"/>
+</filter>
+</defs>
+</svg>

@@ -45,7 +45,7 @@
   border-bottom-left-radius:16px;
 }
 .slick-slider-platform .slick-dots li button{
-  width:117px;
+  width:100% !important;
   background: #E4E9F2;
   border-radius: 16px;
   height:6px;
@@ -76,7 +76,7 @@
     bottom:-40px;
   }
   .slick-slider-platform .slick-dots li,.slick-slider-platform .slick-dots li button{
-    width:32px;
+    width:100%;
   }
 }
 .custom-col.col-md-6{
@@ -115,6 +115,7 @@
 .faq-accordion .card{
   margin-bottom:16px !important;
   background:transparent;
+  border: transparent;
 }
 .faq-accordion .card .btn-link{
   color: #2E3A59;
@@ -175,7 +176,7 @@
   justify-content:center;
   margin-right:16px;
   position: relative;
-  top: 3px;
+  top: 0 !important;
   color:#2E3A59;
 }
 @media screen and (max-width:992px){
@@ -189,4 +190,5 @@
     column-fill: balance;
   }
 }
+
 

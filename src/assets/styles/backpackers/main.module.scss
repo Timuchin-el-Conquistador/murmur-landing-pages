@@ -1,0 +1,312 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.main_top_section {
+  .main_top_contain {
+    .tailored_left {
+      max-width: 330px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      h4 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 18px;
+        /* or 117% */
+
+        letter-spacing: 0.005em;
+
+        /* Basic colors/Neutral 700 */
+
+        color: #2e3a59;
+        @media (min-width: 700px) {
+          font-size: 28px;
+          line-height: 26px;
+        }
+        @media (min-width: 900px) {
+          font-size: 48px;
+          line-height: 56px;
+        }
+      }
+      p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 16px;
+        /* or 150% */
+
+        letter-spacing: 0.0015em;
+
+        /* Basic colors/Neutral 600 */
+
+        color: #8f9bb3;
+        @media (min-width: 700px) {
+          font-size: 20px;
+          line-height: 22px;
+        }
+        @media (min-width: 900px) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      a {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        //padding: 14px 16px 14px 24px;
+        gap: 8px;
+        /* Brand Color/Purple/Purple 500 */
+
+        background: #7356c0;
+        border-radius: 4px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 12px;
+        /* identical to box height, or 125% */
+
+        /* Basic colors/Neutral 100 */
+
+        color: #ffffff;
+        @media (min-width: 800px) {
+          font-size: 16px;
+          line-height: 24px;
+          width: 216px;
+          height: 48px;
+          padding: 14px 16px 14px 24px;
+        }
+      }
+    }
+    .main_top_img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.backpackers_earn_section {
+  margin: 60px 0;
+
+  h4 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 118% */
+
+    letter-spacing: 0.0025em;
+
+    /* Brand Color/Purple/Purple 500 */
+
+    color: #7356c0;
+
+    @media (min-width: 700px) {
+      font-size: 24px;
+      line-height: 22px;
+    }
+    @media (min-width: 900px) {
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+  .header_bg2 {
+    position: absolute;
+    left: 0;
+  }
+
+  .become_backpacker_images {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    @media (min-width: 900px) {
+      width: fit-content;
+      height: fit-content;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .become_backpacker {
+    margin-top: 12px;
+    text-align: center;
+    span {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      /* identical to box height, or 143% */
+
+      text-align: center;
+      letter-spacing: 0.0015em;
+
+      /* Basic colors/Neutral 600 */
+
+      color: #8f9bb3;
+    }
+    h5 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      /* identical to box height, or 140% */
+
+      text-align: center;
+      letter-spacing: 0.0015em;
+
+      /* Basic colors/Neutral 700 */
+
+      color: #2e3a59;
+      @media (min-width: 900px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      &.condition_h5 {
+        color: #7356c0;
+      }
+      &.pros_in_nmrs {
+        font-size: 44px;
+        line-height: 48px;
+        color: #7356c0;
+        @media (min-width: 900px) {
+          font-size: 60px;
+          line-height: 72px;
+        }
+      }
+    }
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      /* or 143% */
+
+      text-align: center;
+      letter-spacing: 0.0015em;
+
+      /* Basic colors/Neutral 600 */
+
+      color: #8f9bb3;
+      max-width: 250px;
+      display: inline-block;
+      @media (min-width: 900px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      &.p {
+        max-width: 200px;
+        @media (max-width: 700px) {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+}
+
+.custom_row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  &.our_statistics {
+    justify-content: space-between;
+  }
+  @media (min-width: 800px) {
+    justify-content: space-between;
+  }
+}
+
+.backpackers {
+  width: 100%;
+  height: 368px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .text {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h3 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 56px;
+      /* or 117% */
+
+      letter-spacing: 0.005em;
+
+      /* Basic colors/Neutral 100 */
+
+      color: #ffffff;
+      max-width: 601px;
+    }
+    p {
+      /* Body/B1-M */
+
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* or 150% */
+
+      letter-spacing: 0.0015em;
+
+      /* Basic colors/Neutral 300 */
+
+      color: #e4e9f2;
+      max-width: 318px;
+      margin-bottom: 40px;
+    }
+    a {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 16px 14px 24px;
+      gap: 8px;
+
+      width: 216px;
+      height: 48px;
+
+      /* Brand Color/Purple/Purple 500 */
+
+      background: #7356c0;
+      border-radius: 4px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height, or 125% */
+
+      /* Basic colors/Neutral 100 */
+
+      color: #ffffff;
+    }
+  }
+}

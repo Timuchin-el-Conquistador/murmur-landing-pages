@@ -1,4 +1,5 @@
 /* header main lading styles */
+
 .main_header_contain{
     display:flex;
     justify-content:space-between;
@@ -147,6 +148,8 @@
 .street_footer_bottom{
     padding-top:18px;
     padding-bottom:18px;
+    display: flex;
+    align-items: center;
 }
 .copyright{
     margin-bottom:0;
@@ -292,6 +295,15 @@
         margin-bottom:12px;
         display:block;
     }
+    .street_footer_bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .street_footer_bottom > div{
+       flex:content;
+       width: min-content;
+    }
 }
 /* create_champ_btn styles */
 .create_champ_btn{
@@ -321,7 +333,7 @@
 .contact_cover{
     min-height:288px;
     border-radius: 16px;
-    background-image:url('../../images/streetiq//contact-bg.png');
+    background-image:url('../../../images/landing-page/streetiq//contact-bg.png');
     background-repeat:no-repeat;
     background-size:contain;
     background-position:right;
@@ -652,6 +664,13 @@
     height:44px;
     border-radius:50%;
     overflow:hidden;
+}
+.profil_left_img a span img{
+    width: 44px ;
+    height: 44px ;
+    line-height: 95px;
+    font-size: 18px;
+     
 }
 .profil_left_txt{
     width:calc(100% - 44px);

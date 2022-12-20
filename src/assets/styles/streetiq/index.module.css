@@ -1,4 +1,5 @@
 /* street iq takeover section */
+
 .street_row{
     align-items:center;
 }
@@ -8,7 +9,7 @@
     background-repeat: no-repeat;
     background-size:cover;
     background-position: left;
-    background-image: url("../../images/streetiq/image_from_ios.jpg");
+    background-image: url("../../../images/landing-page/streetiq/image_from_ios.jpg");
 }
 .street_header{
     padding-top:32px;
@@ -45,7 +46,7 @@
     background-repeat: no-repeat;
     background-size:100%;
     background-position:center;
-    background-image: url("../../images/streetiq/blur-street-bg.png");
+    background-image: url("../../../images/landing-page/streetiq/blur-street-bg.png");
 }
 .street_heading{
     color: #3F2B89;
@@ -487,10 +488,10 @@
 .happy_block:not(:last-child){
     border-right:1px solid #E4E9F2;
 }
-.happy_block:first-child span{
+/*.happy_block:first-child span{
     display:inline-block;
     margin-top:59px;
-}
+}*/
 .happy_demo_txt{
     color:#8F9BB3;
     font-weight: 500;
@@ -504,6 +505,10 @@
     position:absolute;
     top:16px;
     right:16px;
+}
+.happy_select.happy_istanbulAndtbilisi_select{
+    top:26px;
+    right:56px;
 }
 .happy_select select{
     background: rgba(247, 249, 252, 0.64);
@@ -727,7 +732,7 @@
 .contact_cover{
     min-height:288px;
     border-radius: 16px;
-    background-image:url('../../images/streetiq//contact-bg.png');
+    background-image:url('../../../images/landing-page/streetiq//contact-bg.png');
     background-repeat:no-repeat;
     background-size:contain;
     background-position:right;
@@ -861,6 +866,8 @@
 .street_footer_bottom{
     padding-top:18px;
     padding-bottom:18px;
+    display: flex;
+    align-items: center;
 }
 .copyright{
     margin-bottom:0;
@@ -1006,7 +1013,17 @@
         margin-bottom:12px;
         display:block;
     }
+    .street_footer_bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .street_footer_bottom > div{
+       flex:content;
+       width: min-content;
+    }
 }
+
 /* starts faq styles */
 .street_faq_section{
     padding-top:64px;
@@ -1019,30 +1036,101 @@
     }
 }
 
-
-
-.main_top_img_location{
+.location_university{
     position:absolute;
     animation: animate 2s infinite;
     right:32rem;
-    top: 9rem;
+    top: 10rem;
     width: 20px !important;
     height: 20px !important
 }
-
- /*.main_top_info .main_top_img_location:nth-child(2){
-    right: 26.5rem;
-    top: 8.7rem;
+.location_park{
+    position:absolute;
+    animation: animate 2s infinite;
+    right:30rem;
+    top: 20rem;
+    width: 20px !important;
+    height: 20px !important
 }
-.main_top_info .main_top_img_location:nth-child(3){
-    right: 41rem;
-    top: 16.7rem;
-}
-.main_top_info .main_top_img_location:nth-child(4){
-right: 24rem;
-top: 20.5rem;
-}*/
+@media (min-width:1400px) {
+    .location_university{
 
+        right:35rem;
+        
+
+    }
+    .location_park{
+        right:33rem
+    }
+}
+@media (max-width:1199px) {
+    .location_university{
+
+        right:27rem;
+        top: 10.3rem;
+
+    }
+    .location_park{
+        right:25rem;
+        top: 20rem;
+    }
+}
+@media (max-width:900px) {
+    .location_university{
+
+        right:20rem;
+        top: 10rem;
+
+    }
+    .location_park{
+        right:18rem;
+        top: 20rem;
+    }
+}
+@media (max-width:700px) {
+    .location_university{
+
+        right:14rem;
+        top: 7.2rem;
+
+    }
+    .location_park{
+        right:12rem;
+        top: 15rem;
+    }
+}
+@media (max-width:500px) {
+    .location_university{
+
+        right:12rem;
+        top: 7rem;
+
+    }
+}
+@media (max-width:428px) {
+    .location_university{
+
+        right:9rem;
+        top: 7rem;
+
+    }
+    .location_park{
+        right:7rem;
+        top: 15rem;
+    }
+}
+@media (max-width:375px) {
+    .location_university{
+
+        right:7rem;
+        top: 7rem;
+
+    }
+    .location_park{
+        right:7rem;
+        top: 15rem;
+    }
+}
 @keyframes animate {
     0% {
     transform: scale(1);
@@ -1060,3 +1148,12 @@ top: 20.5rem;
         transform: scale(1);
     }
 }
+
+
+.murmur_ads h6:first-child{
+    padding: 0;
+    margin:0;
+}
+
+
+

@@ -292,6 +292,15 @@
         margin-bottom:12px;
         display:block;
     }
+    .street_footer_bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .street_footer_bottom > div{
+       flex:content;
+       width: min-content;
+    }
 }
 /* create_champ_btn styles */
 .create_champ_btn{
@@ -325,11 +334,11 @@
 }
 /* starts earn money styles */
 .earn_money{
-    padding-top:100px;
+    /*padding-top:100px;*/
     padding-bottom:70px;
 }
 .earn_text{
-    padding-top:80px;
+    padding-top:140px;
 }
 .earn_text h2{
     color:#3F2B89;

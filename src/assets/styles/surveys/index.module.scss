@@ -1,0 +1,1351 @@
+.brand_healph_cont {
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+  background: #fcfcfc;
+
+  .background {
+    background: radial-gradient(
+        150.97% 150.97% at 55.97% 135.05%,
+        #7356c0 0%,
+        #cebcff 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 24px;
+    position: relative;
+    width: 100%;
+    height: 130px;
+    @media (min-width: 576px) {
+      height: 205px;
+    }
+    @media (min-width: 768px) {
+      height: 255px;
+    }
+    @media (min-width: 1200px) {
+      height: 355px;
+    }
+    @media (min-width: 1300px) {
+      height: 455px;
+    }
+    .foreground {
+      background-image: url("../../images/Surveys/Mask.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30px;
+        padding-left: 20px;
+        height: 130px;
+        @media (min-width: 576px) {
+          height: 205px;
+        }
+        @media (min-width: 768px) {
+          height: 255px;
+        }
+        @media (min-width: 1200px) {
+          height: 355px;
+        }
+        @media (min-width: 1300px) {
+          height: 455px;
+        }
+        h1 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 19px;
+          /* or 117% */
+
+          letter-spacing: 0.005em;
+
+          /* Basic colors/Neutral 100 */
+
+          color: #ffffff;
+
+          mix-blend-mode: normal;
+          width: fit-content;
+
+          @media (min-width: 768px) {
+            font-size: 28px;
+            line-height: 30px;
+            width: 350px;
+          }
+          @media (min-width: 992px) {
+            font-size: 33px;
+            line-height: 34px;
+            width: 400px;
+          }
+          @media (min-width: 1300px) {
+            font-size: 48px;
+            line-height: 56px;
+            width: 608px;
+          }
+        }
+        p {
+          /* Headline/Medium/H5-M */
+
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 11px;
+          line-height: 13px;
+          /* or 133% */
+
+          /* Basic colors/Neutral 300 */
+
+          color: #e4e9f2;
+
+          mix-blend-mode: normal;
+          width: fit-content;
+          text-align: start;
+
+          @media (min-width: 768px) {
+            font-size: 14px;
+            line-height: 20px;
+            width: 350px;
+          }
+          @media (min-width: 992px) {
+            font-size: 18px;
+            line-height: 19px;
+            width: 400px;
+          }
+
+          @media (min-width: 1300px) {
+            font-size: 24px;
+            line-height: 32px;
+            width: 608px;
+          }
+        }
+      }
+      .image {
+        background-image: url("../../images/Surveys/Surveys.png");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+        //height: 255px;
+        width: 100%;
+      }
+    }
+  }
+
+  .survey_app {
+    margin-top: 50px;
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+
+      /* or 118% */
+
+      letter-spacing: 0.0025em;
+
+      /* Brand Color/Purple/Purple 500 */
+
+      color: #7356c0;
+      margin: auto;
+      text-align: center;
+
+      font-size: 16px;
+      line-height: 17px;
+      width: 292px;
+      @media (min-width: 768px) {
+        font-size: 25px;
+        line-height: 26px;
+        width: 452px;
+      }
+      @media (min-width: 1300px) {
+        font-size: 34px;
+        line-height: 40px;
+        width: 592px;
+      }
+    }
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height, or 150% */
+
+      text-align: center;
+      letter-spacing: 0.0015em;
+
+      /* Basic colors/Neutral 600 */
+
+      color: #8f9bb3;
+      margin-top: 10px;
+      @media (min-width: 768px) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+      @media (min-width: 1300px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    & > div {
+      .app_preview {
+        background-image: url("../../images/Surveys/Home.png");
+      }
+
+      &:last-child {
+        margin-top: 30px;
+        .app_preview {
+          background-image: url("../../images/Surveys/Analytics.png");
+        }
+      }
+
+      @media (min-width: 1300px) {
+        height: 362px;
+      }
+    }
+
+    .app_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h3 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        /* identical to box height, or 118% */
+
+        letter-spacing: 0.0025em;
+
+        /* Brand Color/Purple/Purple 500 */
+
+        color: #7356c0;
+        @media (min-width: 768px) {
+          font-size: 22px;
+          line-height: 23px;
+        }
+        @media (min-width: 992px) {
+          font-size: 28px;
+          line-height: 29px;
+        }
+        @media (min-width: 1300px) {
+          font-size: 34px;
+          line-height: 40px;
+        }
+      }
+      p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        /* or 140% */
+
+        letter-spacing: 0.0015em;
+
+        /* Basic colors/Neutral 600 */
+
+        color: #8f9bb3;
+        width: 200px;
+        text-align: start;
+        @media (min-width: 768px) {
+          font-size: 16px;
+          line-height: 18px;
+          width: 300px;
+        }
+        @media (min-width: 992px) {
+          font-size: 20px;
+          line-height: 21px;
+          width: 350px;
+        }
+        @media (min-width: 1300px) {
+          font-size: 20px;
+          line-height: 28px;
+          width: 480px;
+        }
+      }
+    }
+    .app_preview {
+      background-repeat: no-repeat;
+      background-position: center;
+
+      background-size: contain;
+      //height: 255px;
+      width: 100%;
+      @media (min-width: 1300px) {
+        background-size: cover;
+      }
+    }
+  }
+
+  .survey_mobile {
+    margin-top: 50px;
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+
+      /* or 118% */
+
+      letter-spacing: 0.0025em;
+
+      /* Brand Color/Purple/Purple 500 */
+
+      color: #7356c0;
+      margin: auto;
+      text-align: center;
+
+      font-size: 16px;
+      line-height: 17px;
+      width: 292px;
+      margin-bottom: 10px;
+      @media (min-width: 768px) {
+        font-size: 25px;
+        line-height: 26px;
+        width: 452px;
+      }
+      @media (min-width: 1300px) {
+        font-size: 34px;
+        line-height: 40px;
+        width: 592px;
+      }
+    }
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height, or 150% */
+
+      text-align: center;
+      letter-spacing: 0.0015em;
+
+      /* Basic colors/Neutral 600 */
+
+      color: #8f9bb3;
+      margin-top: 10px;
+      @media (min-width: 768px) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+      @media (min-width: 1300px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    & > p {
+      max-width: 592px;
+      margin: auto;
+      text-align: center;
+    }
+    .follow_steps {
+      margin-top: 30px;
+      & > div {
+        text-align: center;
+        min-width: 264px;
+        h3 {
+          //max-width: 264px;
+          margin: auto;
+          margin-bottom: 10px;
+
+          @media (max-width: 600px) {
+            white-space: nowrap;
+          }
+        }
+        p {
+          max-width: 264px;
+          margin: auto;
+        }
+        &:first-child {
+          .screen {
+            background-image: url("../../images/Surveys/select-survey.png");
+       
+          }
+        }
+        &:nth-child(2) {
+      
+          .screen {
+            background-image: url("../../images/Surveys/answer-questions.png");
+       
+          }
+        }
+        &:last-child {
+          .screen {
+            background-image: url("../../images/Surveys/recieve-money.png");
+       
+          }
+        }
+        .screen {
+          background-repeat: no-repeat;
+          background-position: center;
+
+          background-size: contain;
+          //height: 255px;
+          width: 100%;
+          height: 186px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .brand_awarness_sec {
+    margin-top: 100px;
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+
+      /* or 118% */
+
+      letter-spacing: 0.0025em;
+
+      /* Brand Color/Purple/Purple 500 */
+
+      color: #7356c0;
+      margin: auto;
+      text-align: center;
+
+      font-size: 16px;
+      line-height: 17px;
+      width: 292px;
+      @media (min-width: 768px) {
+        font-size: 25px;
+        line-height: 26px;
+        width: 452px;
+      }
+      @media (min-width: 1300px) {
+        font-size: 34px;
+        line-height: 40px;
+        width: 592px;
+      }
+    }
+    .brand_awarness_row {
+      margin-top: 30px;
+      & > div {
+        .brand_healph {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("../../images/Surveys/brand-healph.png");
+          background-size: contain;
+          height: 150px;
+          width: 100%;
+
+          @media (min-width: 1300px) {
+            height: 280px;
+          }
+        }
+        strong {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 23px;
+          /* identical to box height, or 118% */
+
+          letter-spacing: 0.0025em;
+
+          /* Brand Color/Purple/Purple 500 */
+
+          color: #7356c0;
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          @media (min-width: 768px) {
+            font-size: 21px;
+            line-height: 26px;
+          }
+          @media (min-width: 992px) {
+            font-size: 28px;
+            line-height: 34px;
+          }
+          @media (min-width: 1300px) {
+            font-size: 34px;
+            line-height: 40px;
+          }
+        }
+        &:first-child {
+          p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            /* or 133% */
+
+            text-align: center;
+
+            /* Basic colors/Neutral 600 */
+
+            color: #8f9bb3;
+            max-width: 300px;
+            margin: auto;
+            @media (min-width: 768px) {
+              font-size: 18px;
+              line-height: 23px;
+              width: 350px;
+            }
+            @media (min-width: 992px) {
+              font-size: 23px;
+              line-height: 26px;
+              width: 400px;
+            }
+            @media (min-width: 1300px) {
+              font-size: 30px;
+              line-height: 38px;
+              width: 608px;
+            }
+          }
+        }
+        h3 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 20px;
+          /* identical to box height, or 118% */
+
+          letter-spacing: 0.0025em;
+
+          /* Brand Color/Purple/Purple 500 */
+
+          color: #7356c0;
+          @media (min-width: 768px) {
+            font-size: 21px;
+            line-height: 26px;
+            width: 350px;
+          }
+          @media (min-width: 992px) {
+            font-size: 28px;
+            line-height: 34px;
+            width: 400px;
+          }
+          @media (min-width: 1300px) {
+            font-size: 34px;
+            line-height: 40px;
+            width: 608px;
+          }
+        }
+ 
+        &:last-child {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 16px;
+            /* or 140% */
+
+            letter-spacing: 0.0015em;
+
+            /* Basic colors/Neutral 600 */
+
+            color: #8f9bb3;
+
+            max-width: 480px;
+          
+            @media (min-width: 768px) {
+              font-size: 18px;
+              line-height: 23px;
+              width: 350px;
+            }
+            @media (min-width: 992px) {
+              font-size: 23px;
+              line-height: 26px;
+              width: 400px;
+            }
+            @media (min-width: 1300px) {
+              font-size: 30px;
+              line-height: 38px;
+              width: 608px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .help_brands_section {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    margin-top: 100px;
+    .left_watermark {
+      transform: rotate(180deg);
+      position: absolute;
+      top: -100px;
+      left: -50px;
+    }
+
+    .right_watermark {
+      position: absolute;
+      bottom: 50px;
+      right: -100px;
+    }
+    .help_brands_container_top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 1400px;
+      .alighned {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 60px;
+
+        @media (max-width: 800px) {
+          flex-direction: column;
+          font-size: 45px;
+          align-items: flex-end;
+        }
+
+        @media (max-width: 600px) {
+          font-size: 30px;
+        }
+        &.width_80percent {
+          align-self: flex-end;
+          width: 80%;
+        }
+        .ray_right {
+          background-image: url("../../images/hypeIQ/ray-rightHead.svg");
+          background-position: right;
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 10px;
+        }
+        .ray_left {
+          background-image: url("../../images/hypeIQ/ray-leftHead.svg");
+          background-position: left;
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 10px;
+        }
+        .text {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+
+          line-height: 72px;
+          /* identical to box height, or 120% */
+
+          letter-spacing: 0.005em;
+
+          /* Brand Color/Purple/Purple 500 */
+
+          color: #7356c0;
+          margin-right: 15px;
+          white-space: nowrap;
+          align-self: flex-start;
+          font-size: 48px;
+          @media (max-width: 800px) {
+            flex-direction: column;
+            font-size: 40px;
+            align-items: flex-end;
+          }
+
+          @media (max-width: 600px) {
+            font-size: 30px;
+          }
+        }
+        .hight_opacity_text {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 300;
+
+          line-height: 72px;
+          /* identical to box height, or 120% */
+
+          letter-spacing: 0.005em;
+
+          /* Brand Color/Purple/Purple 500 */
+
+          color: #7356c0;
+          white-space: nowrap;
+          opacity: 0.5;
+          margin-right: 10px;
+          align-self: flex-end;
+
+          @media (max-width: 800px) {
+            flex-direction: column;
+            font-size: 40px;
+            align-items: flex-end;
+          }
+
+          @media (max-width: 600px) {
+            font-size: 18px;
+            word-break: break-all;
+            line-height: 0;
+          }
+          @media (max-width: 400px) {
+            font-size: 12px;
+          }
+        }
+        .low_opacity_text {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+
+          line-height: 72px;
+          /* identical to box height, or 120% */
+
+          letter-spacing: 0.5rem;
+
+          /* Brand Color/Purple/Purple 500 */
+
+          color: #7356c0;
+          @media (max-width: 600px) {
+            font-size: 18px;
+            //word-break: break-all;
+            line-height: 0;
+            letter-spacing: 0.1rem;
+          }
+          @media (max-width: 400px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .help_brands_container_bottom {
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+      max-width: 1400px;
+      @media (max-width: 700px) {
+        flex-direction: column;
+      }
+    }
+  }
+  .survey_app {
+    &.customer_app {
+      margin-top: 100px;
+      h3 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        /* or 118% */
+
+        letter-spacing: 0.0025em;
+
+        /* Basic colors/Neutral 700 */
+
+        color: #2e3a59;
+      }
+      & > div {
+        &:first-child {
+          .app_preview {
+            background-image: url("../../images/Surveys/create-survey.png");
+          }
+        }
+
+
+        &:nth-child(2) {
+          display: flex;
+          justify-content: center;
+          .app_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            h3{
+              text-align: end;
+              max-width: 480px;
+            }
+          p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 16px;
+            /* or 140% */
+
+            letter-spacing: 0.0015em;
+
+            /* Basic colors/Neutral 600 */
+
+            color: #8f9bb3;
+
+            max-width: 480px;
+          
+            @media (min-width: 768px) {
+              font-size: 18px;
+              line-height: 23px;
+              width: 350px;
+            }
+            @media (min-width: 992px) {
+              font-size: 23px;
+              line-height: 26px;
+              width: 400px;
+            }
+            @media (min-width: 1300px) {
+              font-size: 30px;
+              line-height: 38px;
+              width: 608px;
+            }
+          }
+        }
+
+          margin: 70px 0;
+          .app_preview {
+            background-image: url("../../images/Surveys/update-survey.png");
+          }
+        }
+        &:last-child {
+          .app_preview {
+            background-image: url("../../images/Surveys/manage-surveys.png");
+          }
+        }
+      }
+    }
+  }
+}
+
+/* starts contact page */
+.contact_section,
+.categories_section {
+  padding-top: 70px;
+  padding-bottom: 140px;
+  position: relative;
+
+  &.marginBTN_zero {
+    padding-bottom: 0;
+  }
+  .contact_cover {
+    min-height: 288px;
+    border-radius: 16px;
+    background-image: url("../../images/Surveys/contact-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact_inner {
+    background-image: url("../../images/Surveys/contact-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    position: relative;
+    overflow: hidden;
+  }
+  .social_media {
+    background-image: url("../../images/Surveys/Table.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 536px;
+    height: 348px;
+    bottom: 0;
+    right: 0;
+    @media (max-width: 900px) {
+      width: 300px;
+      height: 450px;
+      bottom: 10px;
+      right: 0;
+    }
+
+    @media (max-width: 750px) {
+      right: 0;
+      width: 180px;
+    }
+
+    @media (max-width: 649px) {
+      width: 200px;
+      bottom: 0;
+      right: 0;
+    }
+
+    @media (max-width: 480px) {
+      width: 200px;
+      bottom: 0px;
+      right: 0;
+    }
+  }
+  .contact_left {
+    padding: 72px 32px 72px 80px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+  .contact_left h4 {
+    font-weight: 600;
+    font-size: 34px;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  .contact_p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    max-width: 544px;
+  }
+  .social_icons {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .social_icons li {
+    display: inline-block;
+    margin-right: 24px;
+  }
+  @media screen and (max-width: 992px) {
+    .contact_cover {
+      background-size: cover;
+    }
+    .contact_container {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .contact_section {
+      padding-top: 0;
+      padding-bottom: 40px;
+    }
+    .contact_left {
+      padding: 48px 32px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .contact_left {
+      padding: 68px 32px 20px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .contact_left {
+      padding: 48px 32px 20px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .contact_p {
+      max-width: 344px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .contact_left h4 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    .contact_p {
+      font-size: 12px;
+      max-width: 344px;
+    }
+    .contact_left {
+      padding: 40px 20px 20px;
+    }
+  }
+  .contact_left .create_champ_btn {
+    background: #fff;
+    color: #7356c0;
+    height: 48px;
+    font-size: 16px;
+    line-height: 46px;
+    padding: 14px 16px 14px 24px;
+  }
+  .contact_left .create_champ_btn svg {
+    margin-left: 4px;
+  }
+
+
+}
+.help_brands_section {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  margin-top: 50px;
+  .left_watermark {
+    transform: rotate(180deg);
+    position: absolute;
+    top: -100px;
+    left: -50px;
+  }
+
+  .right_watermark {
+    position: absolute;
+    bottom: 50px;
+    right: -100px;
+  }
+  .help_brands_container_top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    width: 100%;
+    max-width: 1400px;
+    .alighned {
+      display: flex;
+      //align-items: flex-start;
+
+      width: 100%;
+
+      &:last-child {
+        max-width: 592px;
+      }
+      font-size: 60px;
+
+      @media (max-width: 800px) {
+        flex-direction: column;
+        font-size: 45px;
+        //align-items: flex-start;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 30px;
+      }
+      &.width_80percent {
+        //align-self: flex-start;
+        width: 80%;
+      }
+      .ray_right {
+        background-image: url("../../images/hypeIQ/ray-rightHead.svg");
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 10px;
+      }
+      .ray_left {
+        background-image: url("../../images/hypeIQ/ray-leftHead.svg");
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 10px;
+      }
+      .text {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+
+        line-height: 72px;
+        /* identical to box height, or 120% */
+
+        letter-spacing: 0.005em;
+
+        /* Brand Color/Purple/Purple 500 */
+
+        color: #7356c0;
+        margin-right: 15px;
+        white-space: nowrap;
+        align-self: flex-start;
+        font-size: 48px;
+        @media (max-width: 800px) {
+          //flex-direction: column;
+          font-size: 40px;
+          //align-items: flex-start;
+        }
+
+        @media (max-width: 600px) {
+          font-size: 30px;
+        }
+      }
+      .hight_opacity_text {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 300;
+
+        line-height: 72px;
+        /* identical to box height, or 120% */
+
+        letter-spacing: 0.005em;
+
+        /* Brand Color/Purple/Purple 500 */
+
+        color: #7356c0;
+        white-space: nowrap;
+        opacity: 0.5;
+        margin-right: 10px;
+        //align-self: flex-start;
+
+        @media (max-width: 800px) {
+          //flex-direction: column;
+          font-size: 40px;
+          //align-items: flex-start;
+        }
+
+        @media (max-width: 600px) {
+          font-size: 18px;
+          word-break: break-all;
+          line-height: 0;
+        }
+        @media (max-width: 400px) {
+          font-size: 12px;
+        }
+      }
+      .low_opacity_text {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+
+        line-height: 72px;
+        /* identical to box height, or 120% */
+
+        letter-spacing: 0.5rem;
+
+        /* Brand Color/Purple/Purple 500 */
+
+        color: #7356c0;
+        @media (max-width: 600px) {
+          font-size: 18px;
+          //word-break: break-all;
+          line-height: 0;
+          letter-spacing: 0.1rem;
+        }
+        @media (max-width: 400px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .help_brands_container_bottom {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    //max-width: 592px;
+    .body_text {
+      width: 592px;
+      height: 144px;
+
+      /* Body/B1-M */
+
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* or 150% */
+
+      letter-spacing: 0.0015em;
+
+      /* Basic colors/Neutral 600 */
+
+      color: #8f9bb3;
+    }
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.brands {
+  text-align: center;
+  margin-top: 100px;
+  h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+
+    /* Basic colors/Neutral 700 */
+
+    color: #2e3a59;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 400px);
+    margin: auto;
+    margin-top: 30px;
+
+    @media (max-width: 800px) {
+      width: 100%;
+      //flex-direction: column;
+      li {
+        //margin: 20px 0;
+        img {
+          width: 100px;
+          height: fit-content;
+        }
+      }
+    }
+    @media (max-width: 800px) {
+      li {
+        img {
+          width: 70px;
+          height: fit-content;
+        }
+      }
+    }
+  }
+}
+
+.categories_section {
+  padding-top: 100px;
+  .contact_cover {
+    width: 100%;
+    height: 264px;
+
+    /* Basic colors/Neutral 200 */
+
+    background: #f7f9fc;
+    border-radius: 16px;
+    background-image: none;
+
+    .contact_inner {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      isolation: isolate;
+      min-height: 288px;
+      border-radius: 16px;
+      background-image: url("../../images/Surveys/foreground.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+      
+      p {
+
+        /* Mont Headline/Medium/H6-M */
+
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        /* or 140% */
+
+        letter-spacing: 0.0015em;
+
+        /* Basic colors/Neutral 600 */
+
+        color: #8f9bb3;
+      }
+      h3 {
+    
+
+        /* Mont Headline/Medium/H4-M */
+
+        font-family: "serrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 40px;
+        /* identical to box height, or 118% */
+
+        letter-spacing: 0.0025em;
+
+        /* Brand Color/Purple/Purple 500 */
+
+        color: #7356c0;
+      }
+    }
+    & > div {
+      &:nth-child(2) {
+        &.categories {
+          background-image: url("../../images/Surveys/doctors-teachers.png");
+          background-repeat: no-repeat;
+          background-size: auto;
+          background-position: right 8px;
+          overflow: hidden;
+          width: 246px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 20%;
+        }
+      }
+      &:nth-child(3) {
+        &.categories {
+          background-image: url("../../images/Surveys/students.png");
+          background-repeat: no-repeat;
+          background-size: auto;
+          background-position: right 4px;
+          overflow: hidden;
+          width: 123px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+      &:nth-child(4) {
+        &.categories {
+          background-image: url("../../images/Surveys/workers.png");
+          background-repeat: no-repeat;
+          background-size: auto;
+          background-position: bottom right;
+          overflow: hidden;
+          width: 123px;
+          height: 100%;
+          position: absolute;
+          right: 9%;
+          bottom: 0;
+        }
+      }
+    }
+  }
+          .dashboard{
+          background-image: url("../../images/Surveys/get-analytics.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: right bottom;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          right: -30px;
+          bottom: -50px;
+        }
+
+        &.ai_section{
+          .contact_inner {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 16px;
+            isolation: isolate;
+            min-height: 288px;
+            border-radius: 16px;
+            background-image: url("../../images/Surveys/trsnformed-foreground.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+      
+          }
+          .dashboard{
+            background-image: url("../../images/Surveys/AI.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left top;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+       z-index: 100;
+       top: 0;
+       left: 0;
+       margin-left: 100px;
+          }
+        }
+}

@@ -63,16 +63,21 @@
 /* new added */
 /* mobile menu styles */
 .main_header_center a{
-  color:#2E3A59;
+
+
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 20px;
-  margin-left:20px;
-  margin-right:20px;
-  display: inline-block;
-  margin-top: 4px;
-  transition:all .4s ease;
-}
+  line-height: 19px;
+  letter-spacing: -0.4px;
+  color:#2E3A59;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  }
 .main_header_center a:hover{
   color:#7356C0;
 }
